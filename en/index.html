@@ -1701,12 +1701,51 @@ h1, h2, h3, h4, h5, h6 {
    ======================================== */
 .legal-section {
   background: var(--bg-main);
-  padding: 4rem 0;
+  padding: 2rem 0;
   border-top: 1px solid rgba(0,0,0,0.06);
 }
 
 .legal-section + .legal-section {
-  padding-top: 2rem;
+  padding-top: 1rem;
+}
+
+.legal-master-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: all var(--transition);
+}
+
+.legal-master-toggle:hover {
+  border-color: var(--accent);
+  background: var(--bg-alt);
+}
+
+.legal-master-toggle .legal-toggle-icon {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--text-muted);
+  transition: transform 0.3s ease;
+}
+
+.legal-master-toggle[aria-expanded="true"] .legal-toggle-icon {
+  transform: rotate(45deg);
+}
+
+.legal-master-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
 }
 
 .legal-header {
@@ -2455,10 +2494,12 @@ h1, h2, h3, h4, h5, h6 {
      ======================================== -->
 <section class="legal-section" id="privacy" aria-labelledby="privacy-heading">
   <div class="container">
-    <div class="legal-header">
-      <h2 id="privacy-heading">Política de Privacidad</h2>
-    </div>
-    <p class="legal-updated">Última actualización: Marzo 2026</p>
+    <button class="legal-master-toggle" aria-expanded="false" aria-controls="privacy-body">
+      <span>Privacy Policy</span>
+      <span class="legal-toggle-icon" aria-hidden="true">+</span>
+    </button>
+    <div class="legal-master-body" id="privacy-body">
+    <p class="legal-updated" style="margin-top: 1.5rem;">Última actualización: Marzo 2026</p>
     <div class="legal-accordion">
 
       <div class="legal-accordion-item">
@@ -2742,6 +2783,7 @@ h1, h2, h3, h4, h5, h6 {
       </div>
 
     </div>
+    </div>
   </div>
 </section>
 
@@ -2750,10 +2792,12 @@ h1, h2, h3, h4, h5, h6 {
      ======================================== -->
 <section class="legal-section" id="terms" aria-labelledby="terms-heading">
   <div class="container">
-    <div class="legal-header">
-      <h2 id="terms-heading">Términos de Servicio</h2>
-    </div>
-    <p class="legal-updated">Última actualización: Marzo 2026</p>
+    <button class="legal-master-toggle" aria-expanded="false" aria-controls="terms-body">
+      <span>Terms of Service</span>
+      <span class="legal-toggle-icon" aria-hidden="true">+</span>
+    </button>
+    <div class="legal-master-body" id="terms-body">
+    <p class="legal-updated" style="margin-top: 1.5rem;">Última actualización: Marzo 2026</p>
     <div class="legal-accordion">
 
       <div class="legal-accordion-item">
@@ -2962,6 +3006,7 @@ h1, h2, h3, h4, h5, h6 {
       </div>
 
     </div>
+    </div>
   </div>
 </section>
 
@@ -3146,6 +3191,30 @@ h1, h2, h3, h4, h5, h6 {
           this.click();
         }
       });
+    });
+  });
+
+  /* ========================================
+     2c. LEGAL MASTER TOGGLES (collapse entire section)
+     ======================================== */
+  document.querySelectorAll('.legal-master-toggle').forEach(function(toggle) {
+    toggle.addEventListener('click', function() {
+      var isExpanded = this.getAttribute('aria-expanded') === 'true';
+      var bodyId = this.getAttribute('aria-controls');
+      var body = document.getElementById(bodyId);
+      if (isExpanded) {
+        this.setAttribute('aria-expanded', 'false');
+        body.style.maxHeight = '0';
+      } else {
+        this.setAttribute('aria-expanded', 'true');
+        body.style.maxHeight = body.scrollHeight + 'px';
+      }
+    });
+    toggle.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        this.click();
+      }
     });
   });
 
