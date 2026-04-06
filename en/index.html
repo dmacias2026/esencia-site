@@ -122,10 +122,10 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); font-weight: 700; line-hei
 .nav-links a:hover { color: var(--accent); }
 .nav-right { display: flex; align-items: center; gap: 12px; }
 .lang-toggle { display: flex; align-items: center; gap: 4px; }
-.lang-btn { padding: 5px 10px; font-size: 0.75rem; font-weight: 600; border-radius: 4px; min-height: 32px; min-width: 32px; display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
-.lang-btn.active { background: var(--accent); color: #fff; }
-.lang-btn:not(.active) { border: 1px solid var(--border-subtle); color: var(--text-secondary); }
-.lang-btn:not(.active):hover { border-color: var(--accent); color: var(--accent); }
+.lang-btn { padding: 5px 10px; font-size: 0.75rem; font-weight: 600; border-radius: 4px; min-height: 32px; min-width: 32px; display: flex; align-items: center; justify-content: center; transition: all var(--transition); text-decoration: none; }
+.lang-btn.active { background: var(--accent); color: #fff; pointer-events: none; }
+a.lang-btn:not(.active) { border: 1px solid var(--border-subtle); color: var(--text-secondary); background: #fff; cursor: pointer; }
+a.lang-btn:not(.active):hover { border-color: var(--accent); color: var(--accent); background: #f9f5f0; }
 .nav-cta { display: none; padding: 8px 18px; font-size: 0.82rem; }
 .hamburger { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; font-size: 1.4rem; color: var(--text-primary); border-radius: var(--radius); transition: background var(--transition); }
 .hamburger:hover { background: var(--bg-alt); }
