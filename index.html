@@ -6,12 +6,21 @@
 <title>Esencia Agency — Marketing para Clínicas Estéticas en Colombia</title>
 <meta name="description" content="Agencia de marketing para clínicas estéticas en Colombia. Convertimos Instagram, Google, WhatsApp y Meta Ads en un sistema claro de consultas calificadas. Empieza con una auditoría gratis.">
 <meta name="keywords" content="marketing clínicas estéticas Colombia, marketing médico Colombia, Instagram marketing clínicas, WhatsApp marketing médico">
-<link rel="canonical" href="https://esenciaagency.com">
+<link rel="canonical" href="https://esenciaagency.com/">
+<link rel="alternate" hreflang="es" href="https://esenciaagency.com/">
+<link rel="alternate" hreflang="en" href="https://esenciaagency.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://esenciaagency.com/">
 <meta property="og:title" content="Esencia Agency — Marketing para Clínicas Estéticas en Colombia">
 <meta property="og:description" content="Agencia de marketing para clínicas estéticas en Colombia. Convertimos Instagram, Google, WhatsApp y Meta Ads en un sistema claro de consultas calificadas. Empieza con una auditoría gratis.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://esenciaagency.com">
+<meta property="og:url" content="https://esenciaagency.com/">
 <meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="Esencia Agency">
+<meta property="og:image" content="https://esenciaagency.com/logo.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Esencia Agency — Marketing para Clínicas Estéticas en Colombia">
+<meta name="twitter:description" content="Agencia de marketing para clínicas estéticas en Colombia. Convertimos Instagram, Google, WhatsApp y Meta Ads en un sistema claro de consultas calificadas.">
+<meta name="twitter:image" content="https://esenciaagency.com/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -26,15 +35,15 @@
   "email": "hello@esenciaagency.com",
   "areaServed": {"@type": "Country", "name": "Colombia"},
   "parentOrganization": {"@type": "Organization", "name": "Vantage Media Holdings LLC"},
-  "sameAs": ["https://www.instagram.com/esenciaagency", "https://www.facebook.com/esenciaagency"],
+  "sameAs": ["https://www.instagram.com/esencia.agency", "https://www.facebook.com/esenciaagency"],
   "serviceType": ["Social media marketing", "Aesthetic clinic marketing", "Med spa marketing", "Instagram marketing", "Facebook advertising", "Google Business Profile optimization", "WhatsApp marketing"],
   "founder": {
     "@type": "Person",
     "name": "Daniel Macias",
     "jobTitle": "Founder & Strategist",
-    "description": "Digital marketing strategist specializing in AI-powered patient acquisition systems for aesthetic clinics in Colombia and the US."
+    "description": "Digital marketing strategist specializing in patient acquisition systems for aesthetic clinics in Colombia and the US."
   },
-  "knowsAbout": ["Meta Ads", "Instagram marketing", "WhatsApp Business automation", "AI marketing for healthcare", "medical tourism marketing", "aesthetic clinic marketing Colombia"]
+  "knowsAbout": ["Meta Ads", "Instagram marketing", "WhatsApp Business automation", "medical tourism marketing", "aesthetic clinic marketing Colombia"]
 }
 </script>
 <script type="application/ld+json">
@@ -79,7 +88,7 @@
       "name": "¿Qué resultados puedo esperar?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Depende de tu punto de partida, tu oferta, tu mercado y el presupuesto. No prometemos resultados irreales; trabajamos con KPIs claros, optimización constante y reportes transparentes."
+        "text": "Depende de su punto de partida, su oferta, su mercado y el presupuesto. No prometemos resultados irreales; trabajamos con KPIs claros, optimización constante y reportes transparentes."
       }
     },
     {
@@ -142,7 +151,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Esencia Agency - Houston",
-    "description": "AI-powered marketing for med spas and aesthetic clinics in Houston, TX.",
+    "description": "Marketing for med spas and aesthetic clinics in Houston, TX.",
     "url": "https://esenciaagency.com/en",
     "areaServed": {"@type": "City", "name": "Houston", "containedInPlace": {"@type": "State", "name": "Texas"}},
     "serviceType": "Aesthetic clinic marketing"
@@ -150,2307 +159,437 @@
 ]
 </script>
 <style>
-/* ========================================
-   CSS CUSTOM PROPERTIES
-   ======================================== */
 :root {
   --bg-main: #FFFFFF;
-  --bg-alt: #F5F5F7;
-  --bg-card: #FFFFFF;
-  --bg-dark: #1D1D1F;
-  --text-primary: #1D1D1F;
-  --text-secondary: #424245;
-  --text-muted: #86868B;
+  --bg-alt: #FAFAFA;
+  --bg-dark: #0A0A0A;
+  --text-primary: #0A0A0A;
+  --text-secondary: #3D3D3D;
+  --text-muted: #8A8A8A;
   --accent: #C8A87C;
-  --accent-hover: #B8956A;
-  --accent-light: #D4BC9A;
-  --gold: #C8A87C;
-  --gold-hover: #B8956A;
-  --border-card: transparent;
-  --border-subtle: #E8E8ED;
+  --accent-hover: #B8986C;
+  --border-subtle: #E8E8E8;
   --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --max-width: 1280px;
-  --nav-height: 72px;
-  --transition: 0.3s ease;
-  --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
-  --shadow-md: 0 4px 20px rgba(0,0,0,0.06);
-  --shadow-lg: 0 8px 30px rgba(0,0,0,0.08);
-  --shadow-card: 0 2px 12px rgba(0,0,0,0.06);
-  --radius: 12px;
-  --radius-lg: 16px;
-}
-
-/* ========================================
-   RESET & BASE
-   ======================================== */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--nav-height) + 24px);
-}
-
-body {
-  font-family: var(--font-body);
-  font-size: 17px;
-  line-height: 1.75;
-  color: var(--text-secondary);
-  background-color: var(--bg-main);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-  transition: color var(--transition);
-}
-
-a:hover {
-  color: var(--accent-hover);
-}
-
-button {
-  font-family: inherit;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-ul, ol {
-  list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  line-height: 1.15;
-  color: var(--text-primary);
-  letter-spacing: -0.015em;
-}
-
-/* ========================================
-   FOCUS STYLES
-   ======================================== */
-:focus-visible {
-  outline: 3px solid var(--accent);
-  outline-offset: 3px;
-}
-
-:focus:not(:focus-visible) {
-  outline: none;
-}
-
-/* ========================================
-   SKIP NAVIGATION
-   ======================================== */
-.skip-nav {
-  position: absolute;
-  top: -100%;
-  left: 16px;
-  z-index: 100000;
-  padding: 12px 24px;
-  background: var(--accent);
-  color: #fff;
-  font-weight: 600;
-  border-radius: var(--radius);
-  transition: top var(--transition);
-}
-
-.skip-nav:focus {
-  top: 16px;
-  color: #fff;
-}
-
-/* ========================================
-   UTILITY CLASSES
-   ======================================== */
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-.eyebrow {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 1rem;
-}
-
-.section-heading {
-  font-size: clamp(2rem, 4vw, 3.25rem);
-  margin-bottom: 1.5rem;
-  letter-spacing: -0.02em;
-}
-
-.section-intro {
-  font-size: 1.15rem;
-  color: var(--text-secondary);
-  max-width: 680px;
-  margin-bottom: 3.5rem;
-  line-height: 1.85;
-}
-
-.section-padding {
-  padding: 8rem 0;
-}
-
-.section-padding-lg {
-  padding: 10rem 0;
-}
-
-.bg-main { background-color: var(--bg-main); }
-.bg-alt { background-color: var(--bg-alt); }
-
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ========================================
-   BUTTONS
-   ======================================== */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 36px;
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  border-radius: var(--radius);
-  transition: all var(--transition);
-  min-height: 48px;
-  min-width: 44px;
-  text-align: center;
-  line-height: 1.3;
-}
-
-.btn-primary {
-  background-color: var(--accent);
-  color: #fff;
-  border: none;
-  box-shadow: 0 1px 3px rgba(200,168,124,0.3);
-}
-
-.btn-primary:hover {
-  background-color: var(--accent-hover);
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(200,168,124,0.4);
-  transform: translateY(-1px);
-}
-
-.btn-outline {
-  background-color: transparent;
-  color: var(--text-primary);
-  border: 1.5px solid #D2D2D7;
-}
-
-.btn-outline:hover {
-  background-color: var(--bg-alt);
-  border-color: #C7C7CC;
-  color: var(--text-primary);
-}
-
-.btn-full {
-  width: 100%;
-}
-
-.text-link {
-  color: var(--accent);
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  transition: color var(--transition);
-}
-
-.text-link:hover {
-  color: var(--accent-hover);
-}
-
-/* ========================================
-   NAVIGATION
-   ======================================== */
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background-color: rgba(255,255,255,0.8);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  border-bottom: 1px solid rgba(0,0,0,0.04);
-  transition: box-shadow var(--transition);
-}
-
-.nav.scrolled {
-  box-shadow: 0 0 16px rgba(0,0,0,0.04);
-}
-
-.nav-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: var(--nav-height);
-}
-
-.nav-logo {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  text-decoration: none;
-}
-
-.nav-logo:hover {
-  color: var(--accent);
-}
-
-.nav-links {
-  display: none;
-  align-items: center;
-  gap: 32px;
-}
-
-.nav-links a {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  letter-spacing: 0.01em;
-  transition: color var(--transition);
-}
-
-.nav-links a:hover {
-  color: var(--accent);
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.lang-toggle {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.lang-btn {
-  padding: 6px 12px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  border-radius: 4px;
-  min-height: 36px;
-  min-width: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all var(--transition);
-}
-
-.lang-btn.active {
-  background-color: var(--accent);
-  color: #fff;
-}
-
-.lang-btn:not(.active) {
-  border: 1px solid var(--accent);
-  color: var(--accent);
-}
-
-.lang-btn:not(.active):hover {
-  background-color: var(--accent);
-  color: #fff;
-}
-
-.nav-cta {
-  display: none;
-  padding: 10px 20px;
-  font-size: 0.85rem;
-}
-
-.hamburger {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  font-size: 1.5rem;
-  color: var(--text-primary);
-  background: none;
-  border: none;
-  cursor: pointer;
-  border-radius: var(--radius);
-  transition: background-color var(--transition);
-}
-
-.hamburger:hover {
-  background-color: var(--bg-alt);
-}
-
-/* Mobile Menu */
-.mobile-menu-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.5);
-  z-index: 9998;
-  opacity: 0;
-  transition: opacity var(--transition);
-}
-
-.mobile-menu-overlay.active {
-  display: block;
-  opacity: 1;
-}
-
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  right: -320px;
-  width: 320px;
-  max-width: 85vw;
-  height: 100vh;
-  height: 100dvh;
-  background: #fff;
-  z-index: 9999;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  transition: right 0.3s ease;
-  overflow-y: auto;
-}
-
-.mobile-menu.active {
-  right: 0;
-}
-
-.mobile-menu-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 32px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.mobile-menu-close {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  border-radius: var(--radius);
-  transition: background-color var(--transition);
-}
-
-.mobile-menu-close:hover {
-  background-color: var(--bg-alt);
-}
-
-.mobile-menu-links {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  flex: 1;
-}
-
-.mobile-menu-links a {
-  display: block;
-  padding: 14px 16px;
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  border-radius: var(--radius);
-  transition: background-color var(--transition);
-  min-height: 44px;
-}
-
-.mobile-menu-links a:hover {
-  background-color: var(--bg-alt);
-  color: var(--accent);
-}
-
-.mobile-menu-footer {
-  margin-top: auto;
-  padding-top: 24px;
-  border-top: 1px solid var(--border-subtle);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.mobile-lang-toggle {
-  display: flex;
-  gap: 8px;
-}
-
-/* Desktop styles */
-@media (min-width: 1024px) {
-  .nav-links {
-    display: flex;
-  }
-
-  .lang-toggle {
-    display: flex;
-  }
-
-  .nav-cta {
-    display: inline-flex;
-  }
-
-  .hamburger {
-    display: none;
-  }
-}
-
-/* ========================================
-   HERO
-   ======================================== */
-.hero {
-  padding-top: calc(var(--nav-height) + 5rem);
-  padding-bottom: 8rem;
-  background-color: var(--bg-main);
-}
-
-@media (min-width: 768px) {
-  .hero {
-    padding-top: calc(var(--nav-height) + 8rem);
-  }
-}
-
-.hero-inner {
-  max-width: 860px;
-}
-
-.hero-eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 2rem;
-}
-
-.hero-eyebrow-line {
-  height: 1px;
-  width: 40px;
-  background-color: var(--accent);
-  flex-shrink: 0;
-}
-
-.hero-eyebrow-text {
-  font-family: var(--font-body);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-
-.hero h1 {
-  font-size: clamp(2.75rem, 5.5vw, 5rem);
-  font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.025em;
-  margin-bottom: 2rem;
-  color: var(--text-primary);
-}
-
-.hero h1 em {
-  color: var(--accent);
-  font-style: italic;
-}
-
-.hero-text {
-  font-size: 1.2rem;
-  line-height: 1.75;
-  color: var(--text-secondary);
-  margin-bottom: 1rem;
-  max-width: 640px;
-}
-
-.hero-text-muted {
-  font-size: 1.05rem;
-  color: var(--text-muted);
-  margin-bottom: 3rem;
-  max-width: 640px;
-  font-style: italic;
-}
-
-.hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-/* ========================================
-   TRUST BAR
-   ======================================== */
-.trust-bar {
-  background-color: var(--bg-alt);
-  padding: 5rem 0;
-}
-
-.trust-bar-creds {
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin-bottom: 3.5rem;
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid rgba(0,0,0,0.04);
-}
-
-.trust-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  margin-bottom: 2rem;
-}
-
-@media (min-width: 768px) {
-  .trust-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .trust-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.trust-card {
-  background: var(--bg-card);
-  border: none; box-shadow: var(--shadow-card);
-  border-radius: var(--radius-lg);
-  padding: 2rem 1.5rem;
-  transition: box-shadow var(--transition), transform var(--transition);
-}
-
-.trust-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
-}
-
-.trust-card-icon {
-  font-size: 1.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.trust-card h3 {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.trust-card p {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.trust-note {
-  text-align: center;
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  font-style: italic;
-  margin-top: 1rem;
-}
-
-
-/* ========================================
-   PROBLEM SECTION
-   ======================================== */
-.problems {
-  background-color: var(--bg-alt);
-  padding: 6rem 0;
-}
-
-.problems-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  margin-bottom: 2.5rem;
-}
-
-@media (min-width: 768px) {
-  .problems-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .problems-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.problem-card {
-  background: var(--bg-card);
-  border: none; box-shadow: var(--shadow-card);
-  border-radius: var(--radius-lg);
-  padding: 2rem 1.5rem;
-  transition: box-shadow var(--transition), transform var(--transition);
-}
-
-.problem-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
-}
-
-.problem-icon {
-  color: var(--accent);
-  font-weight: 700;
-  font-size: 1.2rem;
-  margin-bottom: 0.75rem;
-}
-
-.problem-card h3 {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.problem-card p {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.problems-footer {
-  text-align: center;
-}
-
-.problems-footer p {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
-
-/* ========================================
-   SYSTEM SECTION
-   ======================================== */
-.system {
-  background-color: var(--bg-main);
-  padding: 6rem 0;
-}
-
-.system-intro {
-  font-size: 1.05rem;
-  color: var(--text-secondary);
-  max-width: 680px;
-  margin-bottom: 3.5rem;
-  line-height: 1.8;
-}
-
-.system-steps {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0;
-  margin-bottom: 3rem;
-  position: relative;
-}
-
-@media (min-width: 768px) {
-  .system-steps {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0;
-  }
-}
-
-.system-step {
-  position: relative;
-  padding: 2rem 1.5rem;
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .system-step:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    top: 46px;
-    right: -4px;
-    width: 24px;
-    height: 2px;
-    background-color: var(--accent);
-    z-index: 1;
-  }
-
-  .system-step:not(:last-child)::before {
-    content: '';
-    position: absolute;
-    top: 42px;
-    right: -8px;
-    width: 10px;
-    height: 10px;
-    border-right: 2px solid var(--accent);
-    border-bottom: 2px solid var(--accent);
-    transform: rotate(-45deg);
-    z-index: 2;
-  }
-}
-
-@media (max-width: 767px) {
-  .system-step:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 24px;
-    background-color: var(--accent);
-  }
-
-  .system-step:not(:last-child)::before {
-    content: '';
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    width: 10px;
-    height: 10px;
-    border-right: 2px solid var(--accent);
-    border-bottom: 2px solid var(--accent);
-    z-index: 2;
-  }
-
-  .system-step {
-    padding-bottom: 3rem;
-  }
-}
-
-.system-step-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: var(--accent);
-  color: #fff;
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.system-step h3 {
-  font-family: var(--font-body);
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.system-step p {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.system-quote {
-  background: var(--bg-alt);
-  border-left: 4px solid var(--accent);
-  padding: 2rem 2.5rem;
-  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
-  margin-bottom: 2rem;
-  max-width: 720px;
-}
-
-.system-quote p {
-  font-family: var(--font-heading);
-  font-size: 1.15rem;
-  font-style: italic;
-  color: var(--text-secondary);
-  line-height: 1.7;
-}
-
-/* ========================================
-   SERVICES
-   ======================================== */
-.services {
-  background-color: var(--bg-alt);
-  padding: 6rem 0;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-
-@media (min-width: 768px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .services-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.service-card {
-  background: var(--bg-card);
-  border: none; box-shadow: var(--shadow-card);
-  border-radius: var(--radius-lg);
-  padding: 2rem 1.5rem;
-  transition: box-shadow var(--transition), transform var(--transition);
-}
-
-.service-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-3px);
-}
-
-.service-card-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.service-card h3 {
-  font-family: var(--font-body);
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.service-card p {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-/* ========================================
-   STATS / WHY COLOMBIA
-   ======================================== */
-.stats {
-  background-color: var(--bg-main);
-  padding: 6rem 0;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-  margin-top: 3rem;
-}
-
-@media (min-width: 768px) {
-  .stats-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.stat-block {
-  text-align: center;
-  padding: 2rem;
-}
-
-.stat-number {
-  font-family: var(--font-heading);
-  font-size: clamp(3rem, 6vw, 4.5rem);
-  font-weight: 700;
-  color: var(--text-primary);
-  line-height: 1;
-  letter-spacing: -0.03em;
-  margin-bottom: 0.75rem;
-}
-
-.stat-label {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  margin-bottom: 0.5rem;
-}
-
-.stat-source {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
-/* ========================================
-   PRICING
-   ======================================== */
-.pricing {
-  background-color: var(--bg-alt);
-  padding: 6rem 0;
-}
-
-.pricing-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-  margin-bottom: 2.5rem;
-}
-
-@media (min-width: 768px) {
-  .pricing-grid {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: start;
-  }
-}
-
-.pricing-card {
-  background: var(--bg-card);
-  border: none; box-shadow: var(--shadow-card);
-  border-radius: var(--radius-lg);
-  padding: 2.5rem 2rem;
-  transition: box-shadow var(--transition), transform var(--transition);
-}
-
-.pricing-card:hover {
-  box-shadow: var(--shadow-md);
-}
-
-.pricing-card.featured {
-  border: none;
-  box-shadow: 0 4px 32px rgba(200,168,124,0.18);
-  position: relative;
-}
-
-@media (min-width: 768px) {
-  .pricing-card.featured {
-    transform: scale(1.03);
-  }
-
-  .pricing-card.featured:hover {
-    transform: scale(1.05);
-  }
-}
-
-.pricing-tag {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--accent);
-  background: rgba(107, 29, 42, 0.08);
-  padding: 4px 12px;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-}
-
-.pricing-card.featured .pricing-tag {
-  background: var(--accent);
-  color: #fff;
-}
-
-.pricing-name {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.pricing-price {
-  font-family: var(--font-heading);
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 0.25rem;
-}
-
-.pricing-price span {
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: var(--text-muted);
-}
-
-.pricing-currency {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-bottom: 1.5rem;
-}
-
-.pricing-features {
-  margin-bottom: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border-subtle);
-}
-
-.pricing-features li {
-  padding: 8px 0;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.pricing-features li::before {
-  content: '\2713';
-  color: var(--accent);
-  font-weight: 700;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-.pricing-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
-/* ========================================
-   ABOUT
-   ======================================== */
-.about {
-  background-color: var(--bg-main);
-  padding: 6rem 0;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-}
-
-@media (min-width: 768px) {
-  .about-grid {
-    grid-template-columns: 1fr 340px;
-    gap: 4rem;
-  }
-}
-
-.about-text p {
-  font-size: 1.05rem;
-  color: var(--text-secondary);
-  line-height: 1.8;
-  margin-bottom: 1.25rem;
-}
-
-.about-list {
-  margin-top: 1.5rem;
-}
-
-.about-list li {
-  padding: 6px 0;
-  font-size: 0.95rem;
-  color: var(--text-secondary);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.about-list li::before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--accent);
-  flex-shrink: 0;
-}
-
-.about-brand-block {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.about-brand-card {
-  border-left: 3px solid var(--accent);
-  padding: 2rem;
-  background: var(--bg-alt);
-  border-radius: 0 var(--radius) var(--radius) 0;
-}
-
-.about-brand-card h3 {
-  font-size: 1.35rem;
-  margin-bottom: 1.25rem;
-  color: var(--text-primary);
-}
-
-.about-brand-card p {
-  font-size: 0.95rem;
-  line-height: 1.75;
-  color: var(--text-secondary);
-  margin-bottom: 1rem;
-}
-
-.about-brand-card p:last-child {
-  margin-bottom: 0;
-}
-
-.about-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.about-badge {
-  display: inline-block;
-  padding: 8px 16px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: var(--text-secondary);
-  background: var(--bg-alt);
-  border-radius: 999px;
-}
-
-/* ========================================
-   CITIES
-   ======================================== */
-.cities {
-  background-color: var(--bg-alt);
-  padding: 6rem 0;
-}
-
-.cities-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-
-@media (min-width: 768px) {
-  .cities-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .cities-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.city-card {
-  background: var(--bg-card);
-  border: none; box-shadow: var(--shadow-card);
-  border-radius: var(--radius-lg);
-  padding: 2rem 1.5rem;
-  transition: box-shadow var(--transition), transform var(--transition);
-}
-
-.city-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
-}
-
-.city-card h3 {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.city-card p {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.city-card a {
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-/* ========================================
-   FAQ
-   ======================================== */
-.faq {
-  background-color: var(--bg-main);
-  padding: 6rem 0;
-}
-
-.faq-list {
-  max-width: 780px;
-  margin-bottom: 2.5rem;
-}
-
-.faq-item {
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-}
-
-.faq-question {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 0;
-  text-align: left;
-  font-family: var(--font-body);
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  background: none;
-  border: none;
-  cursor: pointer;
-  min-height: 44px;
-  transition: color var(--transition);
-  gap: 16px;
-}
-
-.faq-question:hover {
-  color: var(--accent);
-}
-
-.faq-icon {
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-size: 1.25rem;
-  color: var(--accent);
-  transition: transform var(--transition);
-}
-
-.faq-question[aria-expanded="true"] .faq-icon {
-  transform: rotate(45deg);
-}
-
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease, padding 0.35s ease;
-}
-
-.faq-answer-inner {
-  padding: 0 0 1.25rem 0;
-  font-size: 0.95rem;
-  color: var(--text-secondary);
-  line-height: 1.7;
-}
-
-.faq-footer {
-  max-width: 780px;
-}
-
-.faq-footer p {
-  color: var(--text-secondary);
-  margin-bottom: 0.75rem;
-}
-
-/* ========================================
-   CONTACT
-   ======================================== */
-.contact {
-  background-color: var(--bg-alt);
-  padding: 6rem 0;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-}
-
-@media (min-width: 768px) {
-  .contact-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-  }
-}
-
-.contact-info h2 {
-  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-  margin-bottom: 1rem;
-}
-
-.contact-info-subtitle {
-  font-size: 1.05rem;
-  color: var(--text-secondary);
-  line-height: 1.7;
-  margin-bottom: 2rem;
-}
-
-.contact-detail {
-  font-size: 0.95rem;
-  color: var(--text-secondary);
-  margin-bottom: 0.5rem;
-}
-
-.contact-detail strong {
-  color: var(--text-primary);
-}
-
-.contact-capabilities {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin-top: 0.75rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-}
-
-.contact-checklist {
-  margin-top: 1.5rem;
-}
-
-.contact-checklist li {
-  padding: 6px 0;
-  font-size: 0.95rem;
-  color: var(--text-secondary);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.contact-checklist li .check-mark {
-  color: var(--accent);
-  font-weight: 700;
-}
-
-.contact-form-wrapper {
-  background: var(--bg-card);
-  border: none; box-shadow: var(--shadow-card);
-  border-radius: var(--radius-lg);
-  padding: 2.5rem 2rem;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-label {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: 0.5rem;
-}
-
-.form-input {
-  width: 100%;
-  padding: 16px 18px;
-  font-family: var(--font-body);
-  font-size: 1rem;
-  color: var(--text-primary);
-  background: var(--bg-alt);
-  border: 1.5px solid transparent;
-  border-radius: var(--radius);
-  transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
-  min-height: 52px;
-}
-
-.form-input::placeholder {
-  color: var(--text-muted);
-}
-
-.form-input:focus {
-  outline: none;
-  background: #fff;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(200, 168, 124, 0.15);
-}
-
-.form-input.error {
-  border-color: #c0392b;
-}
-
-.form-error {
-  font-size: 0.8rem;
-  color: #c0392b;
-  margin-top: 4px;
-  display: none;
-}
-
-.form-error.visible {
-  display: block;
-}
-
-.form-note {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin-top: 1rem;
-  line-height: 1.6;
-}
-
-/* ========================================
-   FOOTER
-   ======================================== */
-.site-footer {
-  background-color: #F5F5F7;
-  color: #86868B;
-  padding: 5rem 0 0;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-}
-
-@media (min-width: 768px) {
-  .footer-grid {
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 3rem;
-  }
-}
-
-.footer-brand .nav-logo {
-  color: #1D1D1F;
-  margin-bottom: 1rem;
-  display: inline-block;
-}
-
-.footer-brand p {
-  font-size: 0.88rem;
-  line-height: 1.7;
-  color: #86868B;
-  margin-bottom: 1rem;
-}
-
-.footer-brand-sub {
-  font-size: 0.8rem;
-  color: #86868B;
-}
-
-.footer-col h4 {
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #1D1D1F;
-  margin-bottom: 1rem;
-}
-
-.footer-col ul li {
-  margin-bottom: 8px;
-}
-
-.footer-col a {
-  font-size: 0.88rem;
-  color: #424245;
-  transition: color var(--transition);
-}
-
-.footer-col a:hover {
-  color: #C8A87C;
-}
-
-.footer-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 1.5rem 0;
-  font-size: 0.8rem;
-  color: #86868B;
-}
-
-.footer-bottom a {
-  color: #424245;
-  font-size: 0.8rem;
-}
-
-.footer-bottom a:hover {
-  color: #C8A87C;
-}
-
-.footer-bottom-links {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.footer-accessibility {
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 0.75rem;
-  color: #86868B;
-  border-top: 1px solid rgba(0,0,0,0.04);
-}
-
-/* ========================================
-   LEGAL SECTIONS (Privacy & Terms)
-   ======================================== */
-.legal-section {
-  background: var(--bg-main);
-  padding: 2rem 0;
-  border-top: 1px solid rgba(0,0,0,0.06);
-}
-
-.legal-section + .legal-section {
-  padding-top: 1rem;
-}
-
-.legal-master-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  background: none;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius);
-  padding: 1rem 1.5rem;
-  cursor: pointer;
-  font-family: var(--font-heading);
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  transition: all var(--transition);
-}
-
-.legal-master-toggle:hover {
-  border-color: var(--accent);
-  background: var(--bg-alt);
-}
-
-.legal-master-toggle .legal-toggle-icon {
-  font-size: 1.4rem;
-  font-weight: 300;
-  color: var(--text-muted);
-  transition: transform 0.3s ease;
-}
-
-.legal-master-toggle[aria-expanded="true"] .legal-toggle-icon {
-  transform: rotate(45deg);
-}
-
-.legal-master-body {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-}
-
-.legal-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
-}
-
-.legal-header h2 {
-  font-family: var(--font-heading);
-  font-size: 1.75rem;
-  color: var(--text-primary);
-  letter-spacing: -0.01em;
-}
-
-.legal-updated {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-bottom: 2rem;
-}
-
-.legal-accordion {
-  max-width: 900px;
-}
-
-.legal-accordion-item {
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-}
-
-.legal-accordion-btn {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.25rem 0;
-  text-align: left;
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  background: none;
-  border: none;
-  cursor: pointer;
-  min-height: 44px;
-  transition: color var(--transition);
-  gap: 16px;
-}
-
-.legal-accordion-btn:hover {
-  color: var(--accent);
-}
-
-.legal-accordion-icon {
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-size: 1.1rem;
-  color: var(--accent);
-  transition: transform var(--transition);
-}
-
-.legal-accordion-btn[aria-expanded="true"] .legal-accordion-icon {
-  transform: rotate(45deg);
-}
-
-.legal-accordion-panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease;
-}
-
-.legal-accordion-content {
-  padding: 0 0 1.5rem 0;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  line-height: 1.75;
-}
-
-.legal-accordion-content h3 {
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin: 1.25rem 0 0.5rem;
-}
-
-.legal-accordion-content h3:first-child {
-  margin-top: 0;
-}
-
-.legal-accordion-content p {
-  margin-bottom: 0.75rem;
-}
-
-.legal-accordion-content ul {
-  margin: 0.5rem 0 1rem 1.25rem;
-  list-style: disc;
-}
-
-.legal-accordion-content ul li {
-  margin-bottom: 0.35rem;
-}
-
-.legal-accordion-content a {
-  color: var(--accent);
-  text-decoration: underline;
-}
-
-/* ========================================
-   WHATSAPP FLOATING BUTTON
-   ======================================== */
-.whatsapp-float {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 9999;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 0 24px;
-  height: 56px;
-  background-color: var(--gold);
-  color: #fff;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  text-decoration: none;
-  box-shadow: 0 4px 16px rgba(200, 168, 124, 0.35);
-  transition: background-color var(--transition), transform var(--transition), box-shadow var(--transition);
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-.whatsapp-float.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.whatsapp-float:hover {
-  background-color: var(--gold-hover);
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(200, 168, 124, 0.45);
-}
-
-.whatsapp-float.visible:hover {
-  transform: translateY(-2px);
-}
-
-.whatsapp-float svg {
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
-}
-
-/* ========================================
-   PREFERS REDUCED MOTION
-   ======================================== */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-
-  .fade-up {
-    opacity: 1;
-    transform: none;
-  }
-
-  .whatsapp-float {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-/* ========================================
-   PRINT STYLES
-   ======================================== */
-@media print {
-  .nav,
-  .whatsapp-float,
-  .hamburger,
-  .mobile-menu,
-  .mobile-menu-overlay {
-    display: none !important;
-  }
-
-  body {
-    font-size: 12pt;
-    color: #000;
-    background: #fff;
-  }
-
-  .section-padding,
-  .section-padding-lg {
-    padding: 2rem 0;
-  }
-
-  .hero {
-    padding-top: 2rem;
-  }
-
-  .fade-up {
-    opacity: 1;
-    transform: none;
-  }
-}
+  --max-width: 1120px;
+  --nav-height: 64px;
+  --transition: 0.2s ease;
+  --radius: 8px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-height) + 24px); }
+body { font-family: var(--font-body); font-size: 17px; line-height: 1.7; color: var(--text-secondary); background: var(--bg-main); -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--accent-hover); }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+ul, ol { list-style: none; }
+h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); font-weight: 700; line-height: 1.15; color: var(--text-primary); letter-spacing: -0.02em; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+:focus:not(:focus-visible) { outline: none; }
+.skip-nav { position: absolute; top: -100%; left: 16px; z-index: 100000; padding: 12px 24px; background: var(--accent); color: #fff; font-weight: 600; border-radius: var(--radius); transition: top var(--transition); }
+.skip-nav:focus { top: 16px; color: #fff; }
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+.section-padding { padding: 6rem 0; }
+@media (min-width: 768px) { .section-padding { padding: 8rem 0; } }
+.fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 32px; font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; border-radius: var(--radius); transition: all var(--transition); min-height: 48px; text-align: center; line-height: 1.3; }
+.btn-primary { background: var(--accent); color: #fff; border: none; }
+.btn-primary:hover { background: var(--accent-hover); color: #fff; }
+.btn-secondary { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+.btn-secondary:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn-full { width: 100%; }
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255,255,255,0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,0.04); transition: box-shadow var(--transition); }
+.nav.scrolled { box-shadow: 0 1px 8px rgba(0,0,0,0.04); }
+.nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: var(--nav-height); }
+.nav-logo { font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: var(--text-primary); text-decoration: none; letter-spacing: -0.02em; }
+.nav-logo:hover { color: var(--accent); }
+.nav-links { display: none; align-items: center; gap: 28px; }
+.nav-links a { font-size: 0.82rem; font-weight: 500; color: var(--text-secondary); transition: color var(--transition); }
+.nav-links a:hover { color: var(--accent); }
+.nav-right { display: flex; align-items: center; gap: 12px; }
+.lang-toggle { display: flex; align-items: center; gap: 4px; }
+.lang-btn { padding: 5px 10px; font-size: 0.75rem; font-weight: 600; border-radius: 4px; min-height: 32px; min-width: 32px; display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
+.lang-btn.active { background: var(--accent); color: #fff; }
+.lang-btn:not(.active) { border: 1px solid var(--border-subtle); color: var(--text-secondary); }
+.lang-btn:not(.active):hover { border-color: var(--accent); color: var(--accent); }
+.nav-cta { display: none; padding: 8px 18px; font-size: 0.82rem; }
+.hamburger { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; font-size: 1.4rem; color: var(--text-primary); border-radius: var(--radius); transition: background var(--transition); }
+.hamburger:hover { background: var(--bg-alt); }
+.mobile-menu-overlay { display: none; position: fixed; top:0;left:0;right:0;bottom:0; background: rgba(0,0,0,0.4); z-index: 9998; opacity: 0; transition: opacity var(--transition); }
+.mobile-menu-overlay.active { display: block; opacity: 1; }
+.mobile-menu { position: fixed; top:0; right: -320px; width: 320px; max-width: 85vw; height: 100vh; height: 100dvh; background: #fff; z-index: 9999; padding: 24px; display: flex; flex-direction: column; transition: right 0.3s ease; overflow-y: auto; }
+.mobile-menu.active { right: 0; }
+.mobile-menu-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; padding-bottom: 16px; border-bottom: 1px solid var(--border-subtle); }
+.mobile-menu-close { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; border-radius: var(--radius); transition: background var(--transition); }
+.mobile-menu-close:hover { background: var(--bg-alt); }
+.mobile-menu-links { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.mobile-menu-links a { display: block; padding: 12px 16px; font-size: 1rem; font-weight: 500; color: var(--text-primary); border-radius: var(--radius); transition: background var(--transition); min-height: 44px; }
+.mobile-menu-links a:hover { background: var(--bg-alt); color: var(--accent); }
+.mobile-menu-footer { margin-top: auto; padding-top: 24px; border-top: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 12px; }
+.mobile-lang-toggle { display: flex; gap: 8px; }
+@media (min-width: 1024px) { .nav-links { display: flex; } .nav-cta { display: inline-flex; } .hamburger { display: none; } }
+.hero { padding-top: calc(var(--nav-height) + 4rem); padding-bottom: 0; }
+@media (min-width: 768px) { .hero { padding-top: calc(var(--nav-height) + 6rem); } }
+.hero-inner { max-width: 800px; }
+.hero h1 { font-size: clamp(2.5rem, 5.5vw, 4.25rem); font-weight: 700; line-height: 1.08; letter-spacing: -0.03em; margin-bottom: 1.5rem; }
+.hero h1 em { color: var(--accent); font-style: italic; }
+.hero-sub { font-size: 1.15rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 2.5rem; max-width: 560px; }
+.hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 4rem; }
+.proof-bar { border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 2.5rem 0; }
+.proof-bar-inner { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem 2rem; text-align: center; }
+@media (min-width: 768px) { .proof-bar-inner { grid-template-columns: repeat(4, 1fr); gap: 0; } .proof-bar-item:not(:last-child) { border-right: 1px solid var(--border-subtle); } }
+.proof-bar-item { padding: 0 1rem; }
+.proof-number { font-family: var(--font-heading); font-size: clamp(1.75rem, 3vw, 2.25rem); font-weight: 700; color: var(--text-primary); line-height: 1; letter-spacing: -0.02em; margin-bottom: 0.35rem; }
+.proof-label { font-size: 0.8rem; color: var(--text-muted); line-height: 1.4; }
+.problems-list { max-width: 640px; margin-bottom: 2rem; }
+.problem-item { display: flex; align-items: flex-start; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.problem-item:last-child { border-bottom: none; }
+.problem-x { color: var(--text-muted); font-size: 1rem; font-weight: 600; flex-shrink: 0; margin-top: 2px; }
+.problem-text h3 { font-family: var(--font-body); font-size: 1rem; font-weight: 600; margin-bottom: 0.2rem; }
+.problem-text p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; }
+.system { background: var(--bg-alt); }
+.system-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 3rem; }
+@media (min-width: 768px) { .system-grid { grid-template-columns: repeat(4, 1fr); } }
+.system-step-num { font-family: var(--font-heading); font-size: 2.5rem; font-weight: 700; color: rgba(200,168,124,0.2); line-height: 1; margin-bottom: 0.75rem; letter-spacing: -0.03em; }
+.system-step h3 { font-family: var(--font-body); font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; }
+.system-step p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.55; }
+.case-study-label { display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.5rem; }
+.case-study-heading { font-size: clamp(1.75rem, 3.5vw, 2.5rem); margin-bottom: 0.75rem; letter-spacing: -0.02em; }
+.case-study-sub { font-size: 1rem; color: var(--text-muted); margin-bottom: 3rem; max-width: 600px; }
+.case-metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
+@media (min-width: 768px) { .case-metrics { grid-template-columns: repeat(3, 1fr); } }
+.case-metric { padding: 1.5rem; background: var(--bg-alt); border-radius: var(--radius); }
+.case-metric-number { font-family: var(--font-heading); font-size: 1.75rem; font-weight: 700; color: var(--text-primary); line-height: 1; margin-bottom: 0.35rem; letter-spacing: -0.02em; }
+.case-metric-label { font-size: 0.82rem; color: var(--text-muted); line-height: 1.4; }
+.case-before-after { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 2rem; }
+@media (min-width: 768px) { .case-before-after { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+.ba-column h4 { font-family: var(--font-body); font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-subtle); }
+.ba-row { display: flex; justify-content: space-between; padding: 0.6rem 0; font-size: 0.9rem; }
+.ba-row span:first-child { color: var(--text-secondary); }
+.ba-row span:last-child { font-weight: 600; color: var(--text-primary); }
+.case-note { font-size: 0.82rem; color: var(--text-muted); font-style: italic; padding-top: 1rem; border-top: 1px solid var(--border-subtle); }
+.services { background: var(--bg-alt); }
+.services-grid { display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--border-subtle); border: 1px solid var(--border-subtle); border-radius: var(--radius); overflow: hidden; margin-top: 3rem; }
+@media (min-width: 768px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+.service-item { padding: 2rem; background: var(--bg-main); }
+.service-item h3 { font-family: var(--font-body); font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; }
+.service-item p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.55; }
+.about-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; margin-top: 2rem; }
+@media (min-width: 768px) { .about-grid { grid-template-columns: 1fr 1fr; gap: 4rem; } }
+.about-text p { font-size: 1rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 1rem; }
+.about-text p:last-child { margin-bottom: 0; }
+.about-sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+.about-card { padding: 2rem; background: var(--bg-alt); border-radius: var(--radius); }
+.about-card h3 { font-family: var(--font-body); font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+.about-card p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.65; }
+.about-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 0.5rem; }
+.about-tag { display: inline-block; padding: 6px 14px; font-size: 0.75rem; font-weight: 600; color: var(--text-secondary); background: var(--bg-alt); border-radius: 999px; border: 1px solid var(--border-subtle); }
+.faq { background: var(--bg-alt); }
+.faq-list { max-width: 720px; }
+.faq-item { border-bottom: 1px solid var(--border-subtle); }
+.faq-question { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 0; text-align: left; font-family: var(--font-body); font-size: 1rem; font-weight: 600; color: var(--text-primary); background: none; border: none; cursor: pointer; min-height: 44px; transition: color var(--transition); gap: 16px; }
+.faq-question:hover { color: var(--accent); }
+.faq-icon { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.1rem; color: var(--text-muted); transition: transform var(--transition); }
+.faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+.faq-answer-inner { padding: 0 0 1.25rem 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7; }
+.contact-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; }
+@media (min-width: 768px) { .contact-grid { grid-template-columns: 1fr 1fr; gap: 4rem; } }
+.contact-info h2 { font-size: clamp(1.75rem, 3.5vw, 2.5rem); margin-bottom: 1rem; }
+.contact-info-sub { font-size: 1rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 2rem; max-width: 440px; }
+.contact-detail { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.4rem; }
+.contact-detail strong { color: var(--text-primary); }
+.contact-form-wrapper { background: var(--bg-alt); border-radius: var(--radius); padding: 2rem; }
+.form-group { margin-bottom: 1.25rem; }
+.form-label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; }
+.form-input { width: 100%; padding: 14px 16px; font-family: var(--font-body); font-size: 0.95rem; color: var(--text-primary); background: #fff; border: 1.5px solid var(--border-subtle); border-radius: var(--radius); transition: border-color var(--transition); min-height: 48px; }
+.form-input::placeholder { color: var(--text-muted); }
+.form-input:focus { outline: none; border-color: var(--accent); }
+.form-input.error { border-color: #c0392b; }
+.form-error { font-size: 0.78rem; color: #c0392b; margin-top: 4px; display: none; }
+.form-error.visible { display: block; }
+.form-note { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.75rem; line-height: 1.5; }
+.site-footer { background: var(--bg-alt); color: var(--text-muted); padding: 4rem 0 0; }
+.footer-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--border-subtle); }
+@media (min-width: 768px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; } }
+.footer-brand .nav-logo { color: var(--text-primary); margin-bottom: 0.75rem; display: inline-block; }
+.footer-brand p { font-size: 0.85rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 0.5rem; }
+.footer-brand-sub { font-size: 0.78rem; color: var(--text-muted); }
+.footer-col h4 { font-family: var(--font-body); font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-primary); margin-bottom: 0.75rem; }
+.footer-col ul li { margin-bottom: 6px; }
+.footer-col a { font-size: 0.85rem; color: var(--text-secondary); transition: color var(--transition); }
+.footer-col a:hover { color: var(--accent); }
+.footer-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 1.25rem 0; font-size: 0.78rem; color: var(--text-muted); }
+.footer-bottom a { color: var(--text-secondary); font-size: 0.78rem; }
+.footer-bottom a:hover { color: var(--accent); }
+.footer-bottom-links { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.footer-accessibility { text-align: center; padding: 0.75rem 0; font-size: 0.72rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); }
+.legal-section { background: var(--bg-main); padding: 2rem 0; border-top: 1px solid var(--border-subtle); }
+.legal-section + .legal-section { padding-top: 1rem; }
+.legal-master-toggle { display: flex; align-items: center; justify-content: space-between; width: 100%; background: none; border: 1px solid var(--border-subtle); border-radius: var(--radius); padding: 1rem 1.5rem; cursor: pointer; font-family: var(--font-body); font-size: 1rem; font-weight: 600; color: var(--text-primary); transition: all var(--transition); }
+.legal-master-toggle:hover { border-color: var(--accent); }
+.legal-master-toggle .legal-toggle-icon { font-size: 1.2rem; font-weight: 300; color: var(--text-muted); transition: transform 0.3s ease; }
+.legal-master-toggle[aria-expanded="true"] .legal-toggle-icon { transform: rotate(45deg); }
+.legal-master-body { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
+.legal-updated { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+.legal-accordion { max-width: 900px; }
+.legal-accordion-item { border-bottom: 1px solid rgba(0,0,0,0.05); }
+.legal-accordion-btn { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; text-align: left; font-family: var(--font-body); font-size: 0.92rem; font-weight: 600; color: var(--text-primary); background: none; border: none; cursor: pointer; min-height: 44px; transition: color var(--transition); gap: 16px; }
+.legal-accordion-btn:hover { color: var(--accent); }
+.legal-accordion-icon { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem; color: var(--text-muted); transition: transform var(--transition); }
+.legal-accordion-btn[aria-expanded="true"] .legal-accordion-icon { transform: rotate(45deg); }
+.legal-accordion-panel { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+.legal-accordion-content { padding: 0 0 1.25rem 0; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.7; }
+.legal-accordion-content h3 { font-family: var(--font-body); font-size: 0.88rem; font-weight: 700; color: var(--text-primary); margin: 1rem 0 0.4rem; }
+.legal-accordion-content h3:first-child { margin-top: 0; }
+.legal-accordion-content p { margin-bottom: 0.6rem; }
+.legal-accordion-content ul { margin: 0.4rem 0 0.75rem 1.25rem; list-style: disc; }
+.legal-accordion-content ul li { margin-bottom: 0.3rem; }
+.legal-accordion-content a { color: var(--accent); text-decoration: underline; }
+.whatsapp-float { position: fixed; bottom: 24px; right: 24px; z-index: 9999; display: inline-flex; align-items: center; gap: 8px; padding: 0 20px; height: 48px; background: var(--accent); color: #fff; border-radius: 999px; font-weight: 600; font-size: 0.85rem; text-decoration: none; box-shadow: 0 2px 12px rgba(200,168,124,0.3); transition: all var(--transition); opacity: 0; transform: translateY(16px); }
+.whatsapp-float.visible { opacity: 1; transform: translateY(0); }
+.whatsapp-float:hover { background: var(--accent-hover); color: #fff; transform: translateY(-2px); box-shadow: 0 4px 16px rgba(200,168,124,0.4); }
+.whatsapp-float.visible:hover { transform: translateY(-2px); }
+.whatsapp-float svg { width: 20px; height: 20px; flex-shrink: 0; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } .fade-up { opacity: 1; transform: none; } .whatsapp-float { opacity: 1; transform: none; } }
+@media print { .nav, .whatsapp-float, .hamburger, .mobile-menu, .mobile-menu-overlay { display: none !important; } body { font-size: 12pt; color: #000; background: #fff; } .section-padding { padding: 2rem 0; } .hero { padding-top: 2rem; } .fade-up { opacity: 1; transform: none; } }
 </style>
+<!-- REPLACE G-XXXXXXXXXX with your GA4 Measurement ID from analytics.google.com -->
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+<!-- REPLACE XXXXXXXXXXXXXXXXX with your Meta Pixel ID from Events Manager -->
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'XXXXXXXXXXXXXXXXX');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=XXXXXXXXXXXXXXXXX&ev=PageView&noscript=1"
+/></noscript>
 </head>
 <body>
-
-<!-- Skip Navigation -->
 <a href="#main-content" class="skip-nav">Saltar al contenido principal</a>
-
-<!-- ========================================
-     NAVIGATION
-     ======================================== -->
 <header class="nav" role="banner">
   <div class="nav-inner">
     <a href="#top" class="nav-logo" aria-label="Esencia Agency - Inicio">Esencia</a>
-
     <nav class="nav-links" aria-label="Navegacion principal">
-      <a href="#sistema">Cómo Trabajamos</a>
-      <a href="#faq">Preguntas Frecuentes</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#sistema">Sistema</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#faq">FAQ</a>
       <a href="/blog/publicidad-instagram-clinicas-esteticas.html">Blog</a>
-      <a href="#contacto">Contacto</a>
-      <a href="#nosotros">Sobre Nosotros</a>
     </nav>
-
     <div class="nav-right">
       <div class="lang-toggle" role="group" aria-label="Selector de idioma">
         <span class="lang-btn active" aria-label="Espanol (idioma actual)" aria-current="true">ES</span>
-        <a href="/en" class="lang-btn" aria-label="Switch to English">EN</a>
+        <a href="en/index.html" class="lang-btn" aria-label="Switch to English">EN</a>
       </div>
-      <a href="#contacto" class="btn btn-primary nav-cta">Solicitar Auditoría Gratis</a>
-      <button class="hamburger" aria-label="Abrir menu de navegacion" aria-expanded="false" aria-controls="mobile-menu" type="button">
-        <span aria-hidden="true">&#9776;</span>
-      </button>
+      <a href="#contacto" class="btn btn-primary nav-cta">Hablemos</a>
+      <button class="hamburger" aria-label="Abrir menu de navegacion" aria-expanded="false" aria-controls="mobile-menu" type="button"><span aria-hidden="true">&#9776;</span></button>
     </div>
   </div>
 </header>
-
-<!-- Mobile Menu Overlay -->
 <div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
-
-<!-- Mobile Menu -->
 <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu de navegacion" aria-hidden="true">
   <div class="mobile-menu-header">
     <span class="nav-logo">Esencia</span>
-    <button class="mobile-menu-close" aria-label="Cerrar menu de navegacion" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <button class="mobile-menu-close" aria-label="Cerrar menu" type="button"><span aria-hidden="true">&times;</span></button>
   </div>
   <nav class="mobile-menu-links" aria-label="Navegacion movil">
     <a href="#top">Inicio</a>
-    <a href="#sistema">Cómo Trabajamos</a>
-    <a href="#faq">Preguntas Frecuentes</a>
+    <a href="#resultados">Resultados</a>
+    <a href="#sistema">Sistema</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#faq">FAQ</a>
     <a href="/blog/publicidad-instagram-clinicas-esteticas.html">Blog</a>
-    <a href="#contacto">Contacto</a>
-    <a href="#nosotros">Sobre Nosotros</a>
-    <a href="#contacto">Planes</a>
   </nav>
   <div class="mobile-menu-footer">
     <div class="mobile-lang-toggle" role="group" aria-label="Selector de idioma">
       <span class="lang-btn active" aria-label="Espanol (idioma actual)">ES</span>
-      <a href="/en" class="lang-btn" aria-label="Switch to English">EN</a>
+      <a href="en/index.html" class="lang-btn" aria-label="Switch to English">EN</a>
     </div>
-    <a href="#contacto" class="btn btn-primary btn-full">Solicitar Auditoría Gratis</a>
+    <a href="#contacto" class="btn btn-primary btn-full">Hablemos</a>
   </div>
 </div>
 
-<!-- ========================================
-     MAIN CONTENT
-     ======================================== -->
 <main id="main-content">
 
-  <!-- ========================================
-       SECTION 2: HERO
-       ======================================== -->
   <section class="hero" id="top" aria-labelledby="hero-heading">
     <div class="container">
       <div class="hero-inner fade-up">
-        <div class="hero-eyebrow">
-          <span class="hero-eyebrow-line" aria-hidden="true"></span>
-          <span class="hero-eyebrow-text">Sistema de consultas con AI para clinicas esteticas</span>
-          <span class="hero-eyebrow-line" aria-hidden="true"></span>
-        </div>
-        <h1 id="hero-heading">Tu clinica genera interes. Nosotros lo convertimos en <em>consultas reales.</em></h1>
-        <p class="hero-text">Sistemas de marketing con AI que convierten Instagram, Google y WhatsApp en citas agendadas para clinicas esteticas en Colombia y Estados Unidos.</p>
-        <p class="hero-text-muted">No somos una agencia de redes sociales. Construimos sistemas con AI que convierten seguidores en pacientes.</p>
+        <h1 id="hero-heading">248 conversaciones.<br>$0.27 cada una.<br><em>4 campanas.</em></h1>
+        <p class="hero-sub">Marketing para clinicas esteticas en Colombia y Estados Unidos. Convertimos Instagram, Google y WhatsApp en consultas reales.</p>
         <div class="hero-buttons">
-          <a href="#contacto" class="btn btn-primary">Hablemos</a>
-          <a href="#sistema" class="btn btn-outline">Ver el Sistema</a>
+          <a href="https://wa.me/18325577749?text=Hola%2C%20me%20interesa%20una%20auditor%C3%ADa%20para%20mi%20cl%C3%ADnica" class="btn btn-primary" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','Contact',{content_name:'WhatsApp Click - Hero'});if(typeof gtag!=='undefined')gtag('event','whatsapp_click',{event_category:'contact',event_label:'hero'});">Escribanos por WhatsApp</a>
+          <a href="#resultados" class="btn btn-secondary">Ver Resultados</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========================================
-       SECTION 3: TRUST BAR
-       ======================================== -->
-  <section class="trust-bar" aria-labelledby="trust-heading">
+  <section class="proof-bar" aria-label="Resultados reales">
     <div class="container">
-      <p class="trust-bar-creds" aria-label="Credenciales de la agencia">Estrategia potenciada por AI &middot; Bilingue EN/ES &middot; Colombia + USA &middot; 100% remoto &middot; Aprobaciones por WhatsApp</p>
-      <h2 id="trust-heading" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">Nuestras ventajas</h2>
-      <div class="trust-grid">
-        <div class="trust-card fade-up">
-          <div class="trust-card-icon" aria-hidden="true">&#127760;</div>
-          <h3>Bilingue EN/ES</h3>
-          <p>Estrategia, contenido y reportes en ingles y espanol.</p>
-        </div>
-        <div class="trust-card fade-up">
-          <div class="trust-card-icon" aria-hidden="true">&#129302;</div>
-          <h3>Estrategia potenciada por AI</h3>
-          <p>Usamos AI para optimizar anuncios, contenido y automatizar respuestas por WhatsApp.</p>
-        </div>
-        <div class="trust-card fade-up">
-          <div class="trust-card-icon" aria-hidden="true">&#127464;&#127476; &#127482;&#127480;</div>
-          <h3>Colombia + Estados Unidos</h3>
-          <p>Clinicas esteticas, med spas y practicas cosmeticas en LATAM y USA.</p>
-        </div>
-        <div class="trust-card fade-up">
-          <div class="trust-card-icon" aria-hidden="true">&#128202;</div>
-          <h3>Resultados medibles</h3>
-          <p>KPIs claros, reportes mensuales y optimizacion constante basada en datos reales.</p>
-        </div>
+      <div class="proof-bar-inner fade-up">
+        <div class="proof-bar-item"><div class="proof-number">248</div><div class="proof-label">conversaciones generadas</div></div>
+        <div class="proof-bar-item"><div class="proof-number">$0.27</div><div class="proof-label">por conversacion</div></div>
+        <div class="proof-bar-item"><div class="proof-number">+548%</div><div class="proof-label">alcance combinado</div></div>
+        <div class="proof-bar-item"><div class="proof-number">18 dias</div><div class="proof-label">con $5/dia en Meta Ads</div></div>
       </div>
-      <p class="trust-note">Este sistema esta disenado exclusivamente para clinicas esteticas. No trabajamos con todo tipo de negocios.</p>
     </div>
   </section>
 
-
-  <!-- ========================================
-       SECTION 5: PROBLEMS
-       ======================================== -->
-  <section class="problems" aria-labelledby="problems-heading">
+  <section class="section-padding" aria-labelledby="problems-heading" style="background: var(--bg-main);">
     <div class="container">
-      <span class="eyebrow">El Problema</span>
-      <h2 id="problems-heading" class="section-heading">Esto probablemente esta pasando en tu clínica ahora mismo</h2>
-      <div class="problems-grid">
-        <div class="problem-card fade-up">
-          <div class="problem-icon" aria-hidden="true">&#10007;</div>
-          <h3>Mensajes que no avanzan a cita</h3>
-          <p>Recibes consultas por WhatsApp pero no se convierten en pacientes.</p>
-        </div>
-        <div class="problem-card fade-up">
-          <div class="problem-icon" aria-hidden="true">&#10007;</div>
-          <h3>Leads que se enfrian</h3>
-          <p>Falta de seguimiento hace que pierdas oportunidades todos los dias.</p>
-        </div>
-        <div class="problem-card fade-up">
-          <div class="problem-icon" aria-hidden="true">&#10007;</div>
-          <h3>Contenido sin resultados</h3>
-          <p>Publicas contenido pero no sabes cuantas consultas genera.</p>
-        </div>
-        <div class="problem-card fade-up">
-          <div class="problem-icon" aria-hidden="true">&#10007;</div>
-          <h3>Bio de Instagram poco clara</h3>
-          <p>No dice qué haces, dónde estás ni cómo agendar.</p>
-        </div>
-        <div class="problem-card fade-up">
-          <div class="problem-icon" aria-hidden="true">&#10007;</div>
-          <h3>Perfil de Google incompleto</h3>
-          <p>No apareces en busquedas locales cuando alguien busca tratamientos cerca.</p>
-        </div>
-        <div class="problem-card fade-up">
-          <div class="problem-icon" aria-hidden="true">&#10007;</div>
-          <h3>Sin llamada a la acción</h3>
-          <p>Publicas buen contenido pero nunca le dices a la gente qué hacer despues.</p>
-        </div>
-      </div>
-      <div class="problems-footer fade-up">
-        <p>En 2026, la inversion publicitaria con AI crecio 63% a $57 mil millones. Las clinicas que no se adaptan pierden pacientes frente a las que si.</p>
-        <a href="#sistema" class="text-link" aria-label="Conoce el sistema de Esencia Agency">Conoce el sistema &rarr;</a>
+      <h2 id="problems-heading" class="case-study-heading fade-up">Si esto le suena familiar, no es la unica.</h2>
+      <div class="problems-list fade-up">
+        <div class="problem-item"><span class="problem-x" aria-hidden="true">-</span><div class="problem-text"><h3>Mensajes que no se convierten en citas</h3><p>Recibe consultas por WhatsApp pero pocos terminan agendando.</p></div></div>
+        <div class="problem-item"><span class="problem-x" aria-hidden="true">-</span><div class="problem-text"><h3>Publica contenido sin saber que funciona</h3><p>No tiene datos claros sobre que genera consultas y que no.</p></div></div>
+        <div class="problem-item"><span class="problem-x" aria-hidden="true">-</span><div class="problem-text"><h3>Pierde pacientes por responder tarde</h3><p>Sin automatizacion, cada hora de demora es una consulta perdida.</p></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ========================================
-       SECTION 6: SYSTEM
-       ======================================== -->
+  <section class="section-padding" id="resultados" aria-labelledby="case-heading">
+    <div class="container">
+      <span class="case-study-label fade-up">Caso Real</span>
+      <h2 id="case-heading" class="case-study-heading fade-up">Clinica estetica en Bogota. 4 campanas. $68 invertidos.</h2>
+      <p class="case-study-sub fade-up">Dra. Ana Marisol Velandia - clinica de estetica en Bogota. Resultados reales de 4 campanas con $5 USD/dia.</p>
+      <div class="case-metrics fade-up">
+        <div class="case-metric"><div class="case-metric-number">248</div><div class="case-metric-label">conversaciones en 18 dias</div></div>
+        <div class="case-metric"><div class="case-metric-number">$0.27</div><div class="case-metric-label">costo por conversacion</div></div>
+        <div class="case-metric"><div class="case-metric-number">$2.19</div><div class="case-metric-label">CPM mas bajo alcanzado</div></div>
+        <div class="case-metric"><div class="case-metric-number">+548%</div><div class="case-metric-label">alcance combinado</div></div>
+        <div class="case-metric"><div class="case-metric-number">+233%</div><div class="case-metric-label">interacciones en Instagram</div></div>
+        <div class="case-metric"><div class="case-metric-number">4</div><div class="case-metric-label">campanas con tratamientos diferentes</div></div>
+      </div>
+      <div class="case-before-after fade-up">
+        <div class="ba-column">
+          <h4>Antes</h4>
+          <div class="ba-row"><span>Seguidores IG</span><span>48</span></div>
+          <div class="ba-row"><span>Interacciones IG</span><span>21</span></div>
+          <div class="ba-row"><span>Alcance FB semanal</span><span>47</span></div>
+          <div class="ba-row"><span>Vistas FB (28 dias)</span><span>0</span></div>
+        </div>
+        <div class="ba-column">
+          <h4>Despues (18 dias)</h4>
+          <div class="ba-row"><span>Seguidores IG</span><span>57 (+18.8%)</span></div>
+          <div class="ba-row"><span>Interacciones IG</span><span>70 (+233%)</span></div>
+          <div class="ba-row"><span>Alcance FB semanal</span><span>1,100 (+2,240%)</span></div>
+          <div class="ba-row"><span>Vistas FB (28 dias)</span><span>3,200</span></div>
+        </div>
+      </div>
+      <p class="case-note fade-up">Campana real, marzo-abril 2026. Resultados de periodo de prueba.</p>
+    </div>
+  </section>
+
   <section class="system section-padding" id="sistema" aria-labelledby="system-heading">
     <div class="container">
-      <span class="eyebrow">Nuestro Sistema</span>
-      <h2 id="system-heading" class="section-heading">Un sistema con AI que convierte seguidores en pacientes</h2>
-      <p class="system-intro">No vendemos publicaciones. Construimos un sistema integrado con AI que convierte la presencia digital de tu clinica en consultas reales y calificadas.</p>
-
-      <div class="system-steps fade-up">
-        <div class="system-step">
-          <div class="system-step-number" aria-hidden="true">1</div>
-          <h3>Trafico con AI</h3>
-          <p>Anuncios optimizados por AI en Meta y Google para atraer pacientes calificados a tu perfil.</p>
-        </div>
-        <div class="system-step">
-          <div class="system-step-number" aria-hidden="true">2</div>
-          <h3>Captacion Inteligente</h3>
-          <p>Perfil, contenido y pagina optimizados con estrategia AI para que cada visita tenga un siguiente paso claro.</p>
-        </div>
-        <div class="system-step">
-          <div class="system-step-number" aria-hidden="true">3</div>
-          <h3>Conversion por WhatsApp</h3>
-          <p>Automatizacion de WhatsApp con AI para responder al instante y convertir mensajes en citas reales.</p>
-        </div>
-        <div class="system-step">
-          <div class="system-step-number" aria-hidden="true">4</div>
-          <h3>Seguimiento + Datos</h3>
-          <p>Seguimiento automatizado, reportes mensuales y optimizacion continua basada en datos reales.</p>
-        </div>
+      <h2 id="system-heading" class="case-study-heading fade-up">Como funciona.</h2>
+      <p class="case-study-sub fade-up">No vendemos publicaciones. Construimos un sistema que convierte la presencia digital de su clinica en consultas reales.</p>
+      <div class="system-grid fade-up">
+        <div class="system-step"><div class="system-step-num">01</div><h3>Trafico calificado</h3><p>Anuncios en Meta y Google para atraer pacientes reales en su ciudad.</p></div>
+        <div class="system-step"><div class="system-step-num">02</div><h3>Perfil optimizado</h3><p>Instagram, Google Business y contenido disenado para que cada visita tenga un siguiente paso claro.</p></div>
+        <div class="system-step"><div class="system-step-num">03</div><h3>Conversion por WhatsApp</h3><p>Automatizacion para responder al instante y convertir mensajes en citas.</p></div>
+        <div class="system-step"><div class="system-step-num">04</div><h3>Datos y optimizacion</h3><p>Reportes mensuales, seguimiento y ajustes basados en resultados reales.</p></div>
       </div>
-
-      <blockquote class="system-quote fade-up">
-        <p>Las clinicas que crecen no son las que mas publican. Son las que tienen un sistema con AI detras de cada interaccion.</p>
-      </blockquote>
-
-      <a href="#servicios" class="text-link" aria-label="Ver cómo funciona nuestro sistema de servicios">Ver cómo funciona &rarr;</a>
     </div>
   </section>
 
-  <!-- ========================================
-       SECTION 7: SERVICES
-       ======================================== -->
   <section class="services section-padding" id="servicios" aria-labelledby="services-heading">
     <div class="container">
-      <span class="eyebrow">Que Incluye el Sistema</span>
-      <h2 id="services-heading" class="section-heading">Todo lo que tu clinica necesita para crecer. Integrado en un solo sistema.</h2>
-      <div class="services-grid">
-        <article class="service-card fade-up">
-          <div class="service-card-icon" aria-hidden="true">&#129302;</div>
-          <h3>Automatizacion WhatsApp con AI</h3>
-          <p>Respuesta instantanea a consultas. Nunca pierdas un paciente por demora. AI responde, tu cierras.</p>
-        </article>
-        <article class="service-card fade-up">
-          <div class="service-card-icon" aria-hidden="true">&#128226;</div>
-          <h3>Anuncios Optimizados con AI</h3>
-          <p>Campanas en Meta y Google con optimizacion AI. Multiples variaciones creativas para maximizar resultados.</p>
-        </article>
-        <article class="service-card fade-up">
-          <div class="service-card-icon" aria-hidden="true">&#127912;</div>
-          <h3>Contenido Estrategico</h3>
-          <p>Calendario mensual, carruseles, Reels y contenido disenado con AI para atraer y convertir.</p>
-        </article>
-        <article class="service-card fade-up">
-          <div class="service-card-icon" aria-hidden="true">&#128248;</div>
-          <h3>Optimizacion de Instagram + Google</h3>
-          <p>Bio, destacados, SEO local, Google Business Profile y presencia optimizada para busquedas.</p>
-        </article>
-        <article class="service-card fade-up">
-          <div class="service-card-icon" aria-hidden="true">&#128172;</div>
-          <h3>Sistema de Captacion de Pacientes</h3>
-          <p>Flujo completo desde el primer contacto hasta la cita agendada. Seguimiento automatizado.</p>
-        </article>
-        <article class="service-card fade-up">
-          <div class="service-card-icon" aria-hidden="true">&#128202;</div>
-          <h3>Reportes + Optimizacion Continua</h3>
-          <p>Datos reales, KPIs claros, ajustes mensuales. Sabes exactamente que funciona y que no.</p>
-        </article>
+      <h2 id="services-heading" class="case-study-heading fade-up">Que incluye.</h2>
+      <div class="services-grid fade-up">
+        <article class="service-item"><h3>Anuncios en Meta y Google</h3><p>Campanas optimizadas con multiples variaciones creativas para maximizar consultas.</p></article>
+        <article class="service-item"><h3>Contenido estrategico</h3><p>Calendario mensual, carruseles y Reels disenados para atraer y convertir.</p></article>
+        <article class="service-item"><h3>Automatizacion de WhatsApp</h3><p>Respuesta instantanea a consultas. Nunca pierda un paciente por demora.</p></article>
+        <article class="service-item"><h3>Optimizacion de Instagram + Google</h3><p>Bio, destacados, SEO local y Google Business Profile optimizados.</p></article>
+        <article class="service-item"><h3>Sistema de captacion de pacientes</h3><p>Flujo completo desde el primer contacto hasta la cita agendada.</p></article>
+        <article class="service-item"><h3>Reportes y optimizacion mensual</h3><p>Datos reales, KPIs claros y ajustes continuos. Sabe que funciona.</p></article>
       </div>
     </div>
   </section>
 
-  <!-- ========================================
-       SECTION 8: STATS / WHY COLOMBIA
-       ======================================== -->
-  <section class="stats section-padding" aria-labelledby="stats-heading">
+  <section class="section-padding" id="nosotros" aria-labelledby="about-heading">
     <div class="container">
-      <span class="eyebrow">Resultados Reales</span>
-      <h2 id="stats-heading" class="section-heading">Numeros de nuestra primera campana. Sin promesas — datos reales.</h2>
-      <div class="stats-grid fade-up">
-        <div class="stat-block">
-          <div class="stat-number">91</div>
-          <div class="stat-label">conversaciones generadas en 15 dias con $5/dia en Meta Ads</div>
-          <div class="stat-source">Campana real Esencia Agency, Marzo 2026</div>
-        </div>
-        <div class="stat-block">
-          <div class="stat-number">$0.24</div>
-          <div class="stat-label">costo por conversacion — promedio de 3 campanas activas</div>
-          <div class="stat-source">Campana real Esencia Agency, Marzo 2026</div>
-        </div>
-        <div class="stat-block">
-          <div class="stat-number">93%</div>
-          <div class="stat-label">de pacientes en LATAM usan WhatsApp a diario</div>
-          <div class="stat-source">Fuente: Statista, 2026</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================
-       SECTION 9: PRICING
-       ======================================== -->
-  <!-- PRICING SECTION REMOVED 3/25 — pricing may change for Houston market. Redirecting to contact. -->
-  <section class="section-padding" id="precios" aria-labelledby="pricing-heading">
-    <div class="container" style="text-align: center;">
-      <span class="eyebrow">Planes</span>
-      <h2 id="pricing-heading" class="section-heading">Planes Personalizados para tu Clinica</h2>
-      <p class="section-intro">Cada clinica es diferente. Creamos un plan a la medida de tus objetivos y presupuesto.</p>
-      <a href="#contacto" class="btn btn-primary" style="margin-top: 2rem;" aria-label="Solicitar plan personalizado">Solicita tu Plan</a>
-    </div>
-  </section>
-
-  <!-- ========================================
-       SECTION 10: ABOUT
-       ======================================== -->
-  <section class="about section-padding" id="nosotros" aria-labelledby="about-heading">
-    <div class="container">
-      <span class="eyebrow">Sobre Nosotros</span>
-      <h2 id="about-heading" class="section-heading">Tu clinica ya hace buen trabajo. Tu marketing deberia hacer el resto.</h2>
+      <h2 id="about-heading" class="case-study-heading fade-up">Su clinica hace buen trabajo.<br>Su marketing deberia hacer el resto.</h2>
       <div class="about-grid">
         <div class="about-text fade-up">
-          <p>La mayoria de clinicas que auditamos tienen los mismos tres problemas: una bio de Instagram que no dice que hacen ni donde estan, publicaciones sin llamada a la accion, y un WhatsApp que tarda horas en responder. Eso lo corregimos primero.</p>
-          <p>Despues construimos un sistema con AI alrededor: contenido estrategico, anuncios optimizados, automatizacion de WhatsApp y reportes que muestran exactamente que cambio.</p>
-          <ul class="about-list">
-            <li>Clinicas esteticas en Colombia y Estados Unidos</li>
-            <li>Med spas y centros de bienestar</li>
-            <li>Practicas de dermatologia estetica</li>
-            <li>Clinicas con turismo medico internacional</li>
-          </ul>
-          <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.95rem;">Servimos clinicas en cualquier ciudad de Colombia y Estados Unidos. 100% remoto.</p>
+          <p>La mayoria de clinicas que auditamos tienen los mismos problemas: una bio de Instagram que no dice que hacen, publicaciones sin llamada a la accion, y un WhatsApp que tarda horas en responder.</p>
+          <p>Eso lo corregimos primero. Despues construimos un sistema alrededor: contenido, anuncios, automatizacion y reportes que muestran exactamente que cambio.</p>
+          <p>Solo trabajamos con clinicas esteticas y med spas. En Colombia y Estados Unidos. 100% remoto.</p>
+          <div class="about-tags" style="margin-top: 1.5rem;">
+            <span class="about-tag">Clinicas esteticas</span>
+            <span class="about-tag">Med spas</span>
+            <span class="about-tag">Dermatologia estetica</span>
+            <span class="about-tag">Turismo medico</span>
+          </div>
         </div>
-        <div class="about-brand-block fade-up">
-          <div class="about-brand-card">
-            <h3>¿Por que Esencia?</h3>
-            <p>Las clinicas esteticas tienen tratamientos de clase mundial pero presencia digital de hace 10 anos. Agencias genericas venden &ldquo;community management&rdquo; sin entender la industria. Nosotros solo trabajamos con estetica — y usamos tecnologia para ejecutar con la precision de un equipo grande.</p>
-            <p>Operamos desde Houston, Texas para mercados en Colombia y USA. Ejecutamos con estandares internacionales, entendemos turismo medico y somos 100% bilingues. Colombia es top 10 mundial en procedimientos esteticos — y estamos aqui para que tu clinica capture esa demanda.</p>
-          </div>
-          <div class="about-brand-card" style="margin-top: 1.5rem;">
-            <h3>Quien lidera Esencia</h3>
-            <p><strong>Daniel Macias, Fundador &amp; Estratega.</strong> Especialista en marketing digital con enfoque exclusivo en clinicas esteticas. Experiencia en Meta Ads, automatizacion de WhatsApp Business, estrategia de contenido para Instagram y sistemas de captacion de pacientes. Bilingue ingles-espanol, opera desde Houston, TX con ejecucion directa en Colombia.</p>
-          </div>
-          <div class="about-badges">
-            <span class="about-badge">100% Estetica</span>
-            <span class="about-badge">Tecnologia + Estrategia</span>
-            <span class="about-badge">Bilingue EN/ES</span>
-            <span class="about-badge">Turismo Medico</span>
-            <span class="about-badge">100% Remoto</span>
-          </div>
+        <div class="about-sidebar fade-up">
+          <div class="about-card"><h3>Quien lidera Esencia</h3><p><strong>Daniel Macias.</strong> Fundador. Especialista en marketing digital para clinicas esteticas. Experiencia en Meta Ads, automatizacion de WhatsApp y estrategia de contenido para Instagram. Bilingue. Opera desde Houston, TX con ejecucion directa en Colombia.</p></div>
+          <div class="about-card"><h3>Por que Esencia</h3><p>Las clinicas esteticas tienen tratamientos de primer nivel pero una presencia digital que no les hace justicia. Agencias genericas venden "community management" sin entender la industria. Nosotros solo trabajamos con estetica.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========================================
-       SECTION 12: FAQ
-       ======================================== -->
+  <section class="section-padding" id="precios" aria-labelledby="pricing-heading" style="background: var(--bg-alt);">
+    <div class="container" style="text-align: center; max-width: 640px;">
+      <h2 id="pricing-heading" class="case-study-heading fade-up">Planes a la medida de su clinica.</h2>
+      <p class="case-study-sub fade-up" style="margin: 1rem auto 2.5rem;">Cada clinica es diferente. Creamos un plan basado en sus objetivos, su mercado y su presupuesto.</p>
+      <a href="#contacto" class="btn btn-primary fade-up">Solicite su Plan</a>
+    </div>
+  </section>
+
   <section class="faq section-padding" id="faq" aria-labelledby="faq-heading">
     <div class="container">
-      <span class="eyebrow">Preguntas Frecuentes</span>
-      <h2 id="faq-heading" class="section-heading">Preguntas Que Nos Hacen</h2>
-      <p class="section-intro">Todo lo que necesitas saber antes de comenzar.</p>
-
+      <h2 id="faq-heading" class="case-study-heading fade-up" style="margin-bottom: 2.5rem;">Preguntas frecuentes.</h2>
       <div class="faq-list" role="list">
-        <!-- FAQ 1 -->
-        <div class="faq-item" role="listitem">
-          <button class="faq-question" id="faq-question-1" aria-expanded="false" aria-controls="faq-answer-1" type="button">
-            <span>&#191;Quién es dueno de mis redes sociales y cuentas publicitarias?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
-            <div class="faq-answer-inner">
-              Siempre la clínica. Esencia trabaja con accesos seguros y permisos de negocio, pero la propiedad de las cuentas, activos y datos sigue siendo del cliente.
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ 2 -->
-        <div class="faq-item" role="listitem">
-          <button class="faq-question" id="faq-question-2" aria-expanded="false" aria-controls="faq-answer-2" type="button">
-            <span>&#191;Quién paga la pauta publicitaria?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
-            <div class="faq-answer-inner">
-              La clínica paga directamente el presupuesto de anuncios. Nuestro fee cubre estrategia, configuración, gestión y optimización, no el gasto publicitario.
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ 3 -->
-        <div class="faq-item" role="listitem">
-          <button class="faq-question" id="faq-question-3" aria-expanded="false" aria-controls="faq-answer-3" type="button">
-            <span>&#191;Necesito entregar mis propias fotos y videos?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
-            <div class="faq-answer-inner">
-              Lo ideal es contar con material real de la clínica. También estructuramos contenido, guias visuales y piezas complementarias segun el plan contratado.
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ 4 -->
-        <div class="faq-item" role="listitem">
-          <button class="faq-question" id="faq-question-4" aria-expanded="false" aria-controls="faq-answer-4" type="button">
-            <span>&#191;Cómo trabajan si no estan fisicamente en Colombia?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
-            <div class="faq-answer-inner">
-              Todo se maneja de forma remota por Zoom, email y WhatsApp. El proceso esta disenado para ser claro, simple y rápido.
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ 5 -->
-        <div class="faq-item" role="listitem">
-          <button class="faq-question" id="faq-question-5" aria-expanded="false" aria-controls="faq-answer-5" type="button">
-            <span>&#191;Qué resultados puedo esperar?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
-            <div class="faq-answer-inner">
-              Depende de tu punto de partida, tu oferta, tu mercado y el presupuesto. No prometemos resultados irreales; trabajamos con KPIs claros, optimización constante y reportes transparentes.
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ 6 -->
-        <div class="faq-item" role="listitem">
-          <button class="faq-question" id="faq-question-6" aria-expanded="false" aria-controls="faq-answer-6" type="button">
-            <span>&#191;Trabajan con clinicas fuera de Colombia?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
-            <div class="faq-answer-inner">
-              Si. Trabajamos con clinicas esteticas en Colombia y Estados Unidos. Nuestro sistema es 100% remoto y bilingue, disenado para funcionar en cualquier mercado de estetica.
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ 7: AI -->
-        <div class="faq-item" role="listitem">
-          <button class="faq-question" id="faq-question-7" aria-expanded="false" aria-controls="faq-answer-7" type="button">
-            <span>&#191;Como usan AI en el marketing de mi clinica?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7">
-            <div class="faq-answer-inner">
-              Usamos AI para optimizar anuncios, crear variaciones de contenido, automatizar respuestas por WhatsApp y analizar datos de rendimiento. Nuestro equipo dirige la estrategia — AI nos permite ejecutar mas rapido y con mejores resultados. Todo el contenido pasa por revision humana antes de publicarse.
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ 8 -->
-        <div class="faq-item" role="listitem">
-          <button class="faq-question" id="faq-question-8" aria-expanded="false" aria-controls="faq-answer-8" type="button">
-            <span>&#191;Hay contrato antes de empezar?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer" id="faq-answer-8" role="region" aria-labelledby="faq-question-8">
-            <div class="faq-answer-inner">
-              Si. Antes de iniciar, trabajamos con un acuerdo de servicio claro donde se define alcance, tiempos, entregables y condiciones.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-footer fade-up">
-        <p>&#191;Aun tienes preguntas?</p>
-        <a href="#contacto" class="text-link" aria-label="Contactar a Esencia Agency para mas preguntas">Hablemos &rarr;</a>
+        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-1" aria-expanded="false" aria-controls="faq-answer-1" type="button"><span>&#191;Quien es dueno de mis redes sociales y cuentas publicitarias?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1"><div class="faq-answer-inner">Siempre la clinica. Esencia trabaja con accesos seguros y permisos de negocio, pero la propiedad de las cuentas, activos y datos sigue siendo del cliente.</div></div></div>
+        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-2" aria-expanded="false" aria-controls="faq-answer-2" type="button"><span>&#191;Quien paga la pauta publicitaria?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2"><div class="faq-answer-inner">La clinica paga directamente el presupuesto de anuncios. Nuestro fee cubre estrategia, configuracion, gestion y optimizacion, no el gasto publicitario.</div></div></div>
+        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-3" aria-expanded="false" aria-controls="faq-answer-3" type="button"><span>&#191;Necesito entregar mis propias fotos y videos?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3"><div class="faq-answer-inner">Lo ideal es contar con material real de la clinica. Tambien estructuramos contenido, guias visuales y piezas complementarias segun el plan contratado.</div></div></div>
+        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-4" aria-expanded="false" aria-controls="faq-answer-4" type="button"><span>&#191;Como trabajan si no estan fisicamente en Colombia?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4"><div class="faq-answer-inner">Todo se maneja de forma remota por Zoom, email y WhatsApp. El proceso esta disenado para ser claro, simple y rapido.</div></div></div>
+        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-5" aria-expanded="false" aria-controls="faq-answer-5" type="button"><span>&#191;Que resultados puedo esperar?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5"><div class="faq-answer-inner">Depende de su punto de partida, su oferta, su mercado y el presupuesto. No prometemos resultados irreales; trabajamos con KPIs claros, optimizacion constante y reportes transparentes.</div></div></div>
+        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-6" aria-expanded="false" aria-controls="faq-answer-6" type="button"><span>&#191;Trabajan con clinicas fuera de Colombia?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6"><div class="faq-answer-inner">Si. Trabajamos con clinicas esteticas en Colombia y Estados Unidos. Nuestro sistema es 100% remoto y bilingue, disenado para funcionar en cualquier mercado de estetica.</div></div></div>
+        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-7" aria-expanded="false" aria-controls="faq-answer-7" type="button"><span>&#191;Como usan AI en el marketing de mi clinica?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7"><div class="faq-answer-inner">Usamos herramientas de inteligencia artificial para optimizar anuncios, crear variaciones de contenido, automatizar respuestas por WhatsApp y analizar datos de rendimiento. Nuestro equipo dirige la estrategia. Todo el contenido pasa por revision humana antes de publicarse.</div></div></div>
+        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-8" aria-expanded="false" aria-controls="faq-answer-8" type="button"><span>&#191;Hay contrato antes de empezar?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-8" role="region" aria-labelledby="faq-question-8"><div class="faq-answer-inner">Si. Antes de iniciar, trabajamos con un acuerdo de servicio claro donde se define alcance, tiempos, entregables y condiciones.</div></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ========================================
-       SECTION 13: CONTACT
-       ======================================== -->
-  <section class="contact section-padding" id="contacto" aria-labelledby="contact-heading">
+  <section class="section-padding" id="contacto" aria-labelledby="contact-heading">
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info fade-up">
-          <h2 id="contact-heading">Solicita tu auditoria gratuita</h2>
-          <p class="contact-info-subtitle">Cuentanos sobre tu clínica y te responderemos con una auditoria inicial y el siguiente paso mas claro para crecer.</p>
+          <h2 id="contact-heading">Hablemos de su clinica.</h2>
+          <p class="contact-info-sub">Cuentenos sobre su clinica y le responderemos con una auditoria inicial gratuita y el siguiente paso mas claro para crecer.</p>
           <p class="contact-detail"><strong>Email:</strong> hello@esenciaagency.com</p>
-          <p class="contact-detail"><strong>Mercados:</strong> Colombia + USA &middot; 100% remoto &middot; Potenciado por AI</p>
-          <p class="contact-capabilities">Llamadas de estrategia por Zoom &middot; Aprobaciones por correo o WhatsApp &middot; Reportes mensuales en PDF</p>
-          <ul class="contact-checklist">
-            <li><span class="check-mark" aria-hidden="true">&#10003;</span> Qué está fallando</li>
-            <li><span class="check-mark" aria-hidden="true">&#10003;</span> Donde estas perdiendo consultas</li>
-            <li><span class="check-mark" aria-hidden="true">&#10003;</span> Que debes corregir primero</li>
-            <li><span class="check-mark" aria-hidden="true">&#10003;</span> Como mejorar tu sistema</li>
-          </ul>
+          <p class="contact-detail"><strong>WhatsApp:</strong> +1 (832) 557-7749</p>
+          <p class="contact-detail" style="margin-top: 1rem; color: var(--text-muted); font-size: 0.85rem;">Colombia + USA &middot; 100% remoto &middot; Bilingue EN/ES</p>
         </div>
         <div class="contact-form-wrapper fade-up">
           <form action="https://formspree.io/f/REPLACE_THIS" method="POST" id="contact-form" novalidate>
-            <div class="form-group">
-              <label class="form-label" for="contact-name">Tu Nombre *</label>
-              <input class="form-input" type="text" id="contact-name" name="name" required placeholder="Tu nombre completo" autocomplete="name">
-              <div class="form-error" id="error-name" role="alert" aria-live="polite">Por favor ingresa tu nombre.</div>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="contact-whatsapp">WhatsApp *</label>
-              <input class="form-input" type="tel" id="contact-whatsapp" name="whatsapp" required placeholder="+57 300 123 4567" autocomplete="tel">
-              <div class="form-error" id="error-whatsapp" role="alert" aria-live="polite">Por favor ingresa tu número de WhatsApp.</div>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="contact-instagram">Instagram de tu clínica</label>
-              <input class="form-input" type="text" id="contact-instagram" name="instagram" placeholder="@tuclínica">
-            </div>
-            <button type="submit" class="btn btn-primary btn-full" aria-label="Enviar solicitud de auditoria gratuita">Solicitar Auditoría Gratis</button>
+            <div class="form-group"><label class="form-label" for="contact-name">Su Nombre *</label><input class="form-input" type="text" id="contact-name" name="name" required placeholder="Nombre completo" autocomplete="name"><div class="form-error" id="error-name" role="alert" aria-live="polite">Por favor ingrese su nombre.</div></div>
+            <div class="form-group"><label class="form-label" for="contact-whatsapp">WhatsApp *</label><input class="form-input" type="tel" id="contact-whatsapp" name="whatsapp" required placeholder="+57 300 123 4567" autocomplete="tel"><div class="form-error" id="error-whatsapp" role="alert" aria-live="polite">Por favor ingrese su numero de WhatsApp.</div></div>
+            <div class="form-group"><label class="form-label" for="contact-instagram">Instagram de su clinica</label><input class="form-input" type="text" id="contact-instagram" name="instagram" placeholder="@suclinica"></div>
+            <button type="submit" class="btn btn-primary btn-full" aria-label="Enviar solicitud de auditoria gratuita">Solicitar Auditoria Gratis</button>
             <p class="form-note">Respondemos con una recomendacion basada en auditoria, no con una propuesta generica.</p>
           </form>
         </div>
@@ -2460,943 +599,151 @@ h1, h2, h3, h4, h5, h6 {
 
 </main>
 
-<!-- ========================================
-     SECTION: PRIVACY POLICY
-     ======================================== -->
 <section class="legal-section" id="privacy" aria-labelledby="privacy-heading">
   <div class="container">
-    <button class="legal-master-toggle" aria-expanded="false" aria-controls="privacy-body" onclick="var b=document.getElementById('privacy-body');if(this.getAttribute('aria-expanded')==='true'){this.setAttribute('aria-expanded','false');b.style.maxHeight='0';}else{this.setAttribute('aria-expanded','true');b.style.maxHeight=b.scrollHeight+'px';}">
-      <span>Política de Privacidad</span>
-      <span class="legal-toggle-icon" aria-hidden="true">+</span>
-    </button>
+    <button class="legal-master-toggle" aria-expanded="false" aria-controls="privacy-body" onclick="var b=document.getElementById('privacy-body');if(this.getAttribute('aria-expanded')==='true'){this.setAttribute('aria-expanded','false');b.style.maxHeight='0';}else{this.setAttribute('aria-expanded','true');b.style.maxHeight=b.scrollHeight+'px';}"><span>Politica de Privacidad</span><span class="legal-toggle-icon" aria-hidden="true">+</span></button>
     <div class="legal-master-body" id="privacy-body">
-    <p class="legal-updated" style="margin-top: 1.5rem;">Última actualización: Marzo 2026</p>
+    <p class="legal-updated" style="margin-top: 1.5rem;">Ultima actualizacion: Marzo 2026</p>
     <div class="legal-accordion">
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-1">
-          <span>Información de la Empresa</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="priv-1" role="region">
-          <div class="legal-accordion-content">
-            <p>Esta política de privacidad describe cómo <strong>Vantage Media Holdings LLC</strong>, operando bajo la marca comercial <strong>Esencia Agency</strong>, recopila, usa y protege la información personal de los usuarios de este sitio web.</p>
-            <ul>
-              <li><strong>Empresa:</strong> Vantage Media Holdings LLC</li>
-              <li><strong>Ubicación:</strong> Houston, Texas, Estados Unidos</li>
-              <li><strong>Sitio web:</strong> esenciaagency.com</li>
-              <li><strong>Correo de contacto:</strong> <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a></li>
-            </ul>
-            <p>Al utilizar este sitio web, usted acepta las prácticas descritas en esta política. Si no está de acuerdo con alguna de estas prácticas, le pedimos que deje de utilizar el sitio.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-2">
-          <span>Datos que Recopilamos</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="priv-2" role="region">
-          <div class="legal-accordion-content">
-            <h3>Información proporcionada voluntariamente</h3>
-            <p>Cuando usted completa nuestros formularios de contacto, recopilamos:</p>
-            <ul>
-              <li>Nombre completo</li>
-              <li>Número de WhatsApp</li>
-              <li>Cuenta de Instagram de su clínica</li>
-            </ul>
-            <h3>Información recopilada automáticamente</h3>
-            <p>Al visitar nuestro sitio, recopilamos automáticamente cierta información técnica:</p>
-            <ul>
-              <li>Dirección IP</li>
-              <li>Tipo de navegador y versión</li>
-              <li>Tipo de dispositivo (móvil, escritorio, tableta)</li>
-              <li>Páginas visitadas y tiempo de permanencia en cada una</li>
-              <li>URL de referencia (sitio web desde el cual llegó)</li>
-              <li>Sistema operativo</li>
-            </ul>
-            <h3>Cookies y tecnologías de rastreo</h3>
-            <p>Utilizamos cookies y tecnologías similares para mejorar la experiencia del usuario. Consulte la sección "Política de Cookies" a continuación para más detalles.</p>
-            <h3>Datos recopilados por terceros</h3>
-            <ul>
-              <li><strong>Formspree:</strong> Procesa los datos enviados a través de nuestros formularios de contacto.</li>
-              <li><strong>Google Fonts:</strong> Al cargar las fuentes tipográficas, Google puede recopilar información técnica como su dirección IP.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-3">
-          <span>Cómo Usamos sus Datos</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="priv-3" role="region">
-          <div class="legal-accordion-content">
-            <p>Utilizamos la información recopilada para los siguientes fines:</p>
-            <ul>
-              <li>Responder a solicitudes de auditoría y consultas enviadas a través del formulario de contacto.</li>
-              <li>Comunicarnos con usted sobre nuestros servicios de marketing para clínicas estéticas.</li>
-              <li>Mejorar nuestro sitio web, su contenido y la experiencia del usuario.</li>
-              <li>Enviar comunicaciones de marketing únicamente con su consentimiento previo. Puede retirar este consentimiento en cualquier momento escribiéndonos a <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a>.</li>
-              <li>Cumplir con obligaciones legales aplicables.</li>
-              <li>Detectar y prevenir fraude o uso indebido del sitio.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-4">
-          <span>Con Quién Compartimos sus Datos</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="priv-4" role="region">
-          <div class="legal-accordion-content">
-            <p><strong>No vendemos su información personal a terceros bajo ninguna circunstancia.</strong></p>
-            <p>Podemos compartir su información con las siguientes categorías de proveedores de servicios que nos ayudan a operar nuestro negocio:</p>
-            <ul>
-              <li><strong>Formspree:</strong> Procesamiento de formularios de contacto.</li>
-              <li><strong>Google:</strong> Fuentes tipográficas (Google Fonts) y, si se implementan en el futuro, servicios de analítica (Google Analytics).</li>
-              <li><strong>Meta (Facebook/Instagram):</strong> Si se instala el píxel de Meta en el futuro para optimización de campañas publicitarias.</li>
-              <li><strong>Proveedor de hosting:</strong> Almacenamiento y entrega del sitio web.</li>
-            </ul>
-            <p>También podemos divulgar su información cuando sea requerido por ley, orden judicial, o autoridad gubernamental competente.</p>
-            <p>En caso de fusión, adquisición o venta de activos de la empresa, su información personal podría transferirse como parte de la transacción. Le notificaremos sobre cualquier cambio en la propiedad o uso de su información personal.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-5">
-          <span>Política de Cookies</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="priv-5" role="region">
-          <div class="legal-accordion-content">
-            <h3>¿Qué son las cookies?</h3>
-            <p>Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita un sitio web. Se utilizan para recordar sus preferencias y mejorar su experiencia de navegación.</p>
-            <h3>Cookies que utilizamos</h3>
-            <ul>
-              <li><strong>Cookies esenciales:</strong> Necesarias para el funcionamiento básico del sitio web, como la seguridad y la accesibilidad. No se pueden desactivar.</li>
-              <li><strong>Cookies de análisis:</strong> Nos ayudan a entender cómo los visitantes interactúan con el sitio web, qué páginas son más populares y cómo mejorar el rendimiento.</li>
-            </ul>
-            <h3>Cookies de terceros</h3>
-            <p>Servicios integrados como Google Fonts pueden establecer sus propias cookies. Estas cookies están sujetas a las políticas de privacidad de cada tercero.</p>
-            <h3>Cómo desactivar las cookies</h3>
-            <p>Puede configurar su navegador para rechazar todas las cookies o para que le avise cuando se envía una cookie. Los métodos varían según el navegador:</p>
-            <ul>
-              <li><strong>Chrome:</strong> Configuración → Privacidad y seguridad → Cookies y otros datos de sitios</li>
-              <li><strong>Firefox:</strong> Ajustes → Privacidad y seguridad → Cookies y datos del sitio</li>
-              <li><strong>Safari:</strong> Preferencias → Privacidad → Gestionar datos del sitio web</li>
-              <li><strong>Edge:</strong> Configuración → Cookies y permisos del sitio</li>
-            </ul>
-            <p>Tenga en cuenta que desactivar las cookies puede afectar la funcionalidad del sitio web.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-6">
-          <span>Derechos del Usuario — RGPD (Usuarios Europeos)</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="priv-6" role="region">
-          <div class="legal-accordion-content">
-            <p>Si usted se encuentra en el Espacio Económico Europeo (EEE), el Reglamento General de Protección de Datos (RGPD) le otorga los siguientes derechos:</p>
-            <ul>
-              <li><strong>Derecho de acceso:</strong> Solicitar una copia de los datos personales que tenemos sobre usted.</li>
-              <li><strong>Derecho de rectificación:</strong> Solicitar la corrección de datos inexactos o incompletos.</li>
-              <li><strong>Derecho de supresión (derecho al olvido):</strong> Solicitar la eliminación de sus datos personales cuando ya no sean necesarios para los fines por los que fueron recopilados.</li>
-              <li><strong>Derecho a la limitación del tratamiento:</strong> Solicitar la restricción del procesamiento de sus datos en determinadas circunstancias.</li>
-              <li><strong>Derecho a la portabilidad de datos:</strong> Recibir sus datos personales en un formato estructurado, de uso común y lectura mecánica.</li>
-              <li><strong>Derecho de oposición:</strong> Oponerse al tratamiento de sus datos personales para fines de marketing directo u otros intereses legítimos.</li>
-              <li><strong>Derecho a retirar el consentimiento:</strong> Retirar su consentimiento en cualquier momento sin que afecte la licitud del tratamiento basado en el consentimiento previo a su retirada.</li>
-              <li><strong>Derecho a presentar una reclamación:</strong> Presentar una reclamación ante la autoridad de protección de datos supervisora de su país.</li>
-            </ul>
-            <p>Para ejercer cualquiera de estos derechos, escríbanos a <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a>. Responderemos en un plazo máximo de 30 días.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-7">
-          <span>Derechos del Usuario — CCPA/CPRA (Usuarios de California)</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="priv-7" role="region">
-          <div class="legal-accordion-content">
-            <p>Si usted es residente de California, la Ley de Privacidad del Consumidor de California (CCPA) y la Ley de Derechos de Privacidad de California (CPRA) le otorgan los siguientes derechos:</p>
-            <ul>
-              <li><strong>Derecho a saber:</strong> Solicitar información sobre qué datos personales recopilamos, usamos, compartimos y vendemos.</li>
-              <li><strong>Derecho a eliminar:</strong> Solicitar la eliminación de su información personal que hemos recopilado.</li>
-              <li><strong>Derecho a optar por no participar en la venta:</strong> Tiene derecho a optar por no participar en la venta de su información personal. <strong>Informamos que no vendemos información personal de nuestros usuarios.</strong></li>
-              <li><strong>Derecho a la no discriminación:</strong> No lo discriminaremos por ejercer cualquiera de sus derechos de privacidad.</li>
-              <li><strong>Derecho a corregir:</strong> Solicitar la corrección de información personal inexacta que tengamos sobre usted.</li>
-              <li><strong>Derecho a limitar el uso de información personal sensible:</strong> Solicitar que limitemos el uso y la divulgación de su información personal sensible.</li>
-            </ul>
-            <p>Para ejercer estos derechos, contacte a <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a>. Verificaremos su identidad antes de procesar su solicitud.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-8">
-          <span>Derechos del Usuario — LGPD (Usuarios de Brasil)</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="priv-8" role="region">
-          <div class="legal-accordion-content">
-            <p>Si usted se encuentra en Brasil, la Lei Geral de Proteção de Dados (LGPD) le otorga derechos similares al RGPD europeo:</p>
-            <ul>
-              <li>Confirmación de la existencia de tratamiento de sus datos.</li>
-              <li>Acceso a sus datos personales.</li>
-              <li>Corrección de datos incompletos, inexactos o desactualizados.</li>
-              <li>Anonimización, bloqueo o eliminación de datos innecesarios, excesivos o tratados en incumplimiento de la LGPD.</li>
-              <li>Portabilidad de los datos a otro proveedor de servicios.</li>
-              <li>Eliminación de datos personales tratados con su consentimiento.</li>
-              <li>Información sobre las entidades públicas y privadas con las que se han compartido sus datos.</li>
-              <li>Información sobre la posibilidad de no dar consentimiento y sobre las consecuencias de la negativa.</li>
-              <li>Revocación del consentimiento.</li>
-            </ul>
-            <p>Para ejercer estos derechos, escriba a <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a>.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-9">
-          <span>Derechos del Usuario — Ley 1581 de 2012 (Usuarios de Colombia)</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="priv-9" role="region">
-          <div class="legal-accordion-content">
-            <p>Si usted se encuentra en Colombia, la Ley 1581 de 2012 (Ley de Habeas Data) y el Decreto 1377 de 2013 le otorgan los siguientes derechos:</p>
-            <ul>
-              <li><strong>Derecho a conocer, actualizar y rectificar:</strong> Puede acceder, actualizar y corregir sus datos personales en cualquier momento.</li>
-              <li><strong>Derecho a solicitar prueba de consentimiento:</strong> Puede solicitar prueba de la autorización otorgada para el tratamiento de sus datos.</li>
-              <li><strong>Derecho a revocar el consentimiento:</strong> Puede revocar la autorización y/o solicitar la supresión de sus datos cuando considere que no se han respetado los principios, derechos y garantías constitucionales y legales.</li>
-              <li><strong>Derecho a presentar quejas:</strong> Puede presentar quejas ante la Superintendencia de Industria y Comercio (SIC) por infracciones a la ley de protección de datos.</li>
-              <li><strong>Derecho a acceso gratuito:</strong> Puede acceder de forma gratuita a sus datos personales que hayan sido objeto de tratamiento.</li>
-            </ul>
-            <p>Cumplimos con las disposiciones del Decreto 1377 de 2013 en cuanto a las políticas de tratamiento de datos personales, incluyendo la obtención de autorización previa, la finalidad del tratamiento y los derechos de los titulares.</p>
-            <p>Para ejercer estos derechos, escriba a <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a>.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-10">
-          <span>Derechos del Usuario — TDPSA (Usuarios de Texas)</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="priv-10" role="region">
-          <div class="legal-accordion-content">
-            <p>Si usted es residente de Texas, la Ley de Privacidad y Seguridad de Datos de Texas (TDPSA) le otorga los siguientes derechos:</p>
-            <ul>
-              <li><strong>Derecho a confirmar:</strong> Confirmar si estamos procesando sus datos personales.</li>
-              <li><strong>Derecho de acceso:</strong> Acceder a los datos personales que tenemos sobre usted.</li>
-              <li><strong>Derecho de corrección:</strong> Corregir inexactitudes en sus datos personales.</li>
-              <li><strong>Derecho de eliminación:</strong> Solicitar la eliminación de sus datos personales.</li>
-              <li><strong>Derecho de portabilidad:</strong> Obtener una copia de sus datos personales en un formato portable y fácilmente utilizable.</li>
-              <li><strong>Derecho de exclusión:</strong> Optar por no participar en publicidad dirigida, venta de datos personales o elaboración de perfiles que produzcan efectos legales significativos.</li>
-            </ul>
-            <p>Para ejercer estos derechos, contacte a <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a>. Responderemos dentro de los 45 días siguientes a la recepción de su solicitud verificable.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-11">
-          <span>Retención, Seguridad y Transferencias Internacionales</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="priv-11" role="region">
-          <div class="legal-accordion-content">
-            <h3>Retención de datos</h3>
-            <p>Conservamos sus datos personales únicamente durante el tiempo necesario para cumplir con los fines descritos en esta política. Si no ha interactuado con nosotros durante un período de <strong>2 años</strong>, eliminaremos sus datos personales de nuestros sistemas. También puede solicitar la eliminación de sus datos en cualquier momento escribiéndonos a <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a>.</p>
-            <h3>Seguridad de los datos</h3>
-            <ul>
-              <li>Nuestro sitio web utiliza cifrado SSL (HTTPS) para proteger la información transmitida entre su navegador y nuestros servidores.</li>
-              <li>Trabajamos exclusivamente con proveedores de servicios terceros que mantienen prácticas de seguridad adecuadas.</li>
-              <li>Tomamos medidas razonables y apropiadas para proteger su información personal contra acceso no autorizado, alteración, divulgación o destrucción.</li>
-            </ul>
-            <p>Sin embargo, ningún método de transmisión por Internet o almacenamiento electrónico es 100% seguro. No podemos garantizar la seguridad absoluta de sus datos.</p>
-            <h3>Transferencias internacionales de datos</h3>
-            <p>Sus datos pueden ser transferidos y procesados en los <strong>Estados Unidos</strong>, donde se encuentra nuestra empresa. Al utilizar este sitio web y proporcionar su información, usted consiente esta transferencia. Nos comprometemos a tomar las medidas adecuadas para proteger sus datos personales de acuerdo con esta política de privacidad y las leyes aplicables.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-12">
-          <span>Privacidad de Menores y Cambios a esta Política</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="priv-12" role="region">
-          <div class="legal-accordion-content">
-            <h3>Privacidad de menores</h3>
-            <p>Nuestro sitio web y servicios no están dirigidos a menores de 13 años. No recopilamos intencionalmente información personal de niños menores de 13 años, en cumplimiento con la Ley de Protección de Privacidad en Línea para Niños (COPPA) de los Estados Unidos.</p>
-            <p>Si descubrimos que hemos recopilado datos personales de un menor de 13 años sin el consentimiento parental verificable, eliminaremos esa información de nuestros registros de inmediato. Si usted cree que hemos recopilado información de un menor, por favor contacte a <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a>.</p>
-            <h3>Cambios a esta política de privacidad</h3>
-            <p>Nos reservamos el derecho de actualizar o modificar esta política de privacidad en cualquier momento. Cualquier cambio será publicado en esta página con una nueva fecha de "última actualización". Le recomendamos revisar esta política periódicamente para estar informado sobre cómo protegemos su información.</p>
-            <h3>Contacto para asuntos de privacidad</h3>
-            <p>Si tiene preguntas, inquietudes o solicitudes relacionadas con esta política de privacidad o el tratamiento de sus datos personales, puede comunicarse con nosotros:</p>
-            <ul>
-              <li><strong>Correo electrónico:</strong> <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a></li>
-              <li><strong>Empresa:</strong> Vantage Media Holdings LLC</li>
-              <li><strong>Ubicación:</strong> Houston, Texas, Estados Unidos</li>
-            </ul>
-            <p>Nos comprometemos a responder todas las solicitudes dentro de un plazo de <strong>30 días</strong> hábiles.</p>
-          </div>
-        </div>
-      </div>
-
+      <div class="legal-accordion-item"><button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-1"><span>Informacion de la Empresa</span><span class="legal-accordion-icon" aria-hidden="true">+</span></button><div class="legal-accordion-panel" id="priv-1" role="region"><div class="legal-accordion-content"><p>Esta politica de privacidad describe como <strong>Vantage Media Holdings LLC</strong>, operando bajo la marca comercial <strong>Esencia Agency</strong>, recopila, usa y protege la informacion personal de los usuarios de este sitio web.</p><ul><li><strong>Empresa:</strong> Vantage Media Holdings LLC</li><li><strong>Ubicacion:</strong> Houston, Texas, Estados Unidos</li><li><strong>Sitio web:</strong> esenciaagency.com</li><li><strong>Correo de contacto:</strong> <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a></li></ul></div></div></div>
+      <div class="legal-accordion-item"><button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-2"><span>Datos que Recopilamos</span><span class="legal-accordion-icon" aria-hidden="true">+</span></button><div class="legal-accordion-panel" id="priv-2" role="region"><div class="legal-accordion-content"><p>Recopilamos: nombre completo, numero de WhatsApp, cuenta de Instagram (formulario). Automaticamente: direccion IP, navegador, dispositivo, paginas visitadas. Terceros: Formspree (formularios) y Google Fonts.</p></div></div></div>
+      <div class="legal-accordion-item"><button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-3"><span>Como Usamos sus Datos</span><span class="legal-accordion-icon" aria-hidden="true">+</span></button><div class="legal-accordion-panel" id="priv-3" role="region"><div class="legal-accordion-content"><p>Para responder solicitudes de auditoria, comunicarnos sobre nuestros servicios, mejorar el sitio web, enviar comunicaciones de marketing con consentimiento, cumplir obligaciones legales y prevenir fraude.</p></div></div></div>
+      <div class="legal-accordion-item"><button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-4"><span>Con Quien Compartimos sus Datos</span><span class="legal-accordion-icon" aria-hidden="true">+</span></button><div class="legal-accordion-panel" id="priv-4" role="region"><div class="legal-accordion-content"><p><strong>No vendemos su informacion personal.</strong> Compartimos con: Formspree (formularios), Google (fuentes), Meta (si se instala pixel), proveedor de hosting. Tambien cuando lo requiera la ley.</p></div></div></div>
+      <div class="legal-accordion-item"><button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-5"><span>Politica de Cookies</span><span class="legal-accordion-icon" aria-hidden="true">+</span></button><div class="legal-accordion-panel" id="priv-5" role="region"><div class="legal-accordion-content"><p>Usamos cookies esenciales y de analisis. Puede configurar su navegador para rechazar cookies.</p></div></div></div>
+      <div class="legal-accordion-item"><button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-6"><span>Derechos del Usuario - RGPD, CCPA, LGPD, Colombia, Texas</span><span class="legal-accordion-icon" aria-hidden="true">+</span></button><div class="legal-accordion-panel" id="priv-6" role="region"><div class="legal-accordion-content"><p>Segun su ubicacion, tiene derechos de acceso, rectificacion, supresion, portabilidad y oposicion al tratamiento de sus datos. Para ejercer cualquier derecho, escriba a <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a>. Responderemos en un plazo maximo de 30-45 dias segun la legislacion aplicable.</p></div></div></div>
+      <div class="legal-accordion-item"><button class="legal-accordion-btn" aria-expanded="false" aria-controls="priv-7"><span>Retencion, Seguridad y Menores</span><span class="legal-accordion-icon" aria-hidden="true">+</span></button><div class="legal-accordion-panel" id="priv-7" role="region"><div class="legal-accordion-content"><p>Conservamos datos por 2 anos de inactividad. Usamos cifrado SSL. Datos procesados en Estados Unidos. Sitio no dirigido a menores de 13 anos (COPPA). Contacto: <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a> | Vantage Media Holdings LLC, Houston, Texas.</p></div></div></div>
     </div>
     </div>
   </div>
 </section>
 
-<!-- ========================================
-     SECTION: TERMS OF SERVICE
-     ======================================== -->
 <section class="legal-section" id="terms" aria-labelledby="terms-heading">
   <div class="container">
-    <button class="legal-master-toggle" aria-expanded="false" aria-controls="terms-body" onclick="var b=document.getElementById('terms-body');if(this.getAttribute('aria-expanded')==='true'){this.setAttribute('aria-expanded','false');b.style.maxHeight='0';}else{this.setAttribute('aria-expanded','true');b.style.maxHeight=b.scrollHeight+'px';}">
-      <span>Términos de Servicio</span>
-      <span class="legal-toggle-icon" aria-hidden="true">+</span>
-    </button>
+    <button class="legal-master-toggle" aria-expanded="false" aria-controls="terms-body" onclick="var b=document.getElementById('terms-body');if(this.getAttribute('aria-expanded')==='true'){this.setAttribute('aria-expanded','false');b.style.maxHeight='0';}else{this.setAttribute('aria-expanded','true');b.style.maxHeight=b.scrollHeight+'px';}"><span>Terminos de Servicio</span><span class="legal-toggle-icon" aria-hidden="true">+</span></button>
     <div class="legal-master-body" id="terms-body">
-    <p class="legal-updated" style="margin-top: 1.5rem;">Última actualización: Marzo 2026</p>
+    <p class="legal-updated" style="margin-top: 1.5rem;">Ultima actualizacion: Marzo 2026</p>
     <div class="legal-accordion">
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-1">
-          <span>Aceptación de los Términos</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="terms-1" role="region">
-          <div class="legal-accordion-content">
-            <p>Al acceder y utilizar el sitio web esenciaagency.com (el "Sitio") y/o contratar los servicios de <strong>Vantage Media Holdings LLC</strong>, operando bajo la marca comercial <strong>Esencia Agency</strong> (en adelante, "Esencia", "nosotros" o "la Agencia"), usted acepta cumplir con estos Términos de Servicio.</p>
-            <p>Si no está de acuerdo con alguno de estos términos, le solicitamos que deje de utilizar el sitio web y no contrate nuestros servicios.</p>
-            <ul>
-              <li><strong>Empresa:</strong> Vantage Media Holdings LLC</li>
-              <li><strong>Ubicación:</strong> Houston, Texas, Estados Unidos</li>
-              <li><strong>Contacto:</strong> <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-2">
-          <span>Descripción de los Servicios</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="terms-2" role="region">
-          <div class="legal-accordion-content">
-            <p>Esencia Agency ofrece servicios de marketing digital especializados para clínicas estéticas, que pueden incluir:</p>
-            <ul>
-              <li>Gestión de redes sociales (Instagram, Facebook y otras plataformas).</li>
-              <li>Publicidad digital en Meta Ads (Facebook e Instagram) y Google Ads.</li>
-              <li>Automatización de WhatsApp y sistemas de seguimiento de consultas.</li>
-              <li>Creación de contenido (fotografía, video, diseño gráfico, copywriting).</li>
-              <li>Optimización de Google Business Profile.</li>
-              <li>Estrategia de marketing y consultoría.</li>
-            </ul>
-            <p>Los servicios específicos se detallarán en el acuerdo de servicio individual con cada cliente. Todos los acuerdos son <strong>mes a mes</strong> salvo que se especifique lo contrario por escrito.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-3">
-          <span>Responsabilidades del Cliente</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="terms-3" role="region">
-          <div class="legal-accordion-content">
-            <p>Al contratar nuestros servicios, el cliente se compromete a:</p>
-            <ul>
-              <li>Proporcionar acceso oportuno a sus cuentas de redes sociales, herramientas de publicidad y cualquier plataforma necesaria para la prestación de los servicios.</li>
-              <li>El cliente <strong>mantiene la propiedad total</strong> de todas sus cuentas, activos digitales y datos en todo momento. Esencia Agency actúa únicamente como administrador autorizado.</li>
-              <li>El presupuesto publicitario (ad spend) es pagado por el cliente <strong>directamente a Meta, Google o la plataforma correspondiente</strong>. Este presupuesto es independiente de los honorarios de la agencia.</li>
-              <li>El cliente es responsable de la exactitud y veracidad de la información proporcionada a la agencia.</li>
-              <li>El cliente debe contar con todas las licencias, permisos y habilitaciones legales necesarias para operar su clínica estética en su jurisdicción.</li>
-              <li>Responder en tiempo razonable a las solicitudes de aprobación de contenido y materiales.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-4">
-          <span>Propiedad Intelectual</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="terms-4" role="region">
-          <div class="legal-accordion-content">
-            <ul>
-              <li><strong>Metodologías de la agencia:</strong> Esencia Agency retiene todos los derechos sobre sus estrategias, metodologías, plantillas, procesos y herramientas propietarias.</li>
-              <li><strong>Contenido del cliente:</strong> El cliente es propietario de todo el contenido creado específicamente para sus cuentas y campañas, incluyendo fotografías, videos, textos y diseños personalizados.</li>
-              <li><strong>Casos de estudio:</strong> El cliente otorga a Esencia Agency permiso para utilizar resultados anonimizados como casos de estudio y material promocional, a menos que el cliente decline por escrito.</li>
-              <li><strong>Marca de la agencia:</strong> Todo el contenido del sitio web esenciaagency.com, incluyendo textos, diseños, logotipos y código, es propiedad de Vantage Media Holdings LLC.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-5">
-          <span>Términos de Pago</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="terms-5" role="region">
-          <div class="legal-accordion-content">
-            <ul>
-              <li>El pago es exigible al <strong>inicio de cada mes</strong> de servicio, por adelantado.</li>
-              <li>Los planes y precios se definen de forma personalizada segun las necesidades de cada clinica.</li>
-              <li>Los pagos atrasados pueden resultar en la <strong>pausa de los servicios</strong> hasta que se regularice la cuenta.</li>
-              <li><strong>No se realizan reembolsos</strong> por trabajo ya completado o meses de servicio ya iniciados.</li>
-              <li>El presupuesto publicitario es un gasto adicional y separado de los honorarios de la agencia.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-6">
-          <span>Limitación de Responsabilidad</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="terms-6" role="region">
-          <div class="legal-accordion-content">
-            <ul>
-              <li><strong>No garantizamos resultados específicos</strong> en cuanto a número de leads, ingresos, seguidores o cualquier otra métrica. Los resultados de marketing dependen de múltiples factores fuera de nuestro control.</li>
-              <li><strong>No somos responsables</strong> de cambios en las políticas, algoritmos o funcionalidades de Meta, Google, Instagram, WhatsApp o cualquier otra plataforma de terceros.</li>
-              <li>La <strong>responsabilidad máxima</strong> de Esencia Agency está limitada al monto equivalente a <strong>un (1) mes de honorarios de servicio</strong>.</li>
-              <li>En ningún caso seremos responsables de daños indirectos, incidentales, especiales, consecuentes o punitivos, incluyendo pero no limitado a pérdida de ingresos, datos, oportunidades de negocio o cualquier otra pérdida intangible.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-7">
-          <span>Terminación del Servicio</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="terms-7" role="region">
-          <div class="legal-accordion-content">
-            <ul>
-              <li>Cualquiera de las partes puede terminar la relación de servicio con un <strong>aviso por escrito de 30 días</strong>.</li>
-              <li>Al terminar, el cliente <strong>retiene la propiedad y acceso total</strong> a todas sus cuentas, activos digitales y datos.</li>
-              <li>Esencia Agency entregará todo el trabajo pendiente y archivos dentro de los <strong>15 días hábiles</strong> posteriores a la fecha efectiva de terminación.</li>
-              <li>Cualquier pago pendiente al momento de la terminación <strong>sigue siendo exigible</strong>.</li>
-              <li>Esencia Agency se reserva el derecho de terminar el servicio de forma inmediata en caso de incumplimiento grave por parte del cliente.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-8">
-          <span>Alcance del Trabajo y Cambios</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="terms-8" role="region">
-          <div class="legal-accordion-content">
-            <ul>
-              <li>El trabajo incluido en cada plan está definido en el acuerdo de servicio correspondiente.</li>
-              <li>Cualquier trabajo fuera del alcance acordado será <strong>cotizado y facturado por separado</strong>.</li>
-              <li>Los cambios en el alcance del trabajo requieren <strong>acuerdo por escrito</strong> de ambas partes.</li>
-              <li>Las solicitudes adicionales que excedan razonablemente el alcance del plan contratado serán comunicadas al cliente con una cotización antes de proceder.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-9">
-          <span>Aviso sobre Contenido Médico y Cumplimiento Publicitario</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="terms-9" role="region">
-          <div class="legal-accordion-content">
-            <h3>Aviso sobre contenido médico</h3>
-            <ul>
-              <li>Esencia Agency es una <strong>agencia de marketing, no un proveedor de servicios médicos</strong>.</li>
-              <li><strong>No proporcionamos asesoramiento médico</strong> ni realizamos afirmaciones médicas de ningún tipo.</li>
-              <li>El cliente es el <strong>único responsable</strong> de la veracidad y legalidad de todas las afirmaciones médicas incluidas en su contenido de marketing.</li>
-              <li>El cliente debe asegurar que todos los tratamientos promocionados estén debidamente autorizados y sean legales en su jurisdicción.</li>
-            </ul>
-            <h3>Cumplimiento publicitario</h3>
-            <ul>
-              <li>Seguimos las <strong>políticas publicitarias de Meta y Google</strong> en todo el contenido que creamos y gestionamos.</li>
-              <li>El cliente es responsable de garantizar que los tratamientos anunciados cuenten con las <strong>licencias y permisos</strong> correspondientes.</li>
-              <li>En publicidad pagada, utilizamos terminología aprobada por las plataformas (por ejemplo, "Toxina Botulínica" en lugar de marcas registradas en anuncios pagados) para cumplir con las políticas de las plataformas.</li>
-              <li>Esencia Agency no se hace responsable del rechazo de anuncios o restricciones de cuenta impuestas por las plataformas publicitarias.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-accordion-item">
-        <button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-10">
-          <span>Ley Aplicable, Indemnización y Disposiciones Generales</span>
-          <span class="legal-accordion-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="legal-accordion-panel" id="terms-10" role="region">
-          <div class="legal-accordion-content">
-            <h3>Ley aplicable y jurisdicción</h3>
-            <p>Estos términos se rigen por las leyes del <strong>Estado de Texas, Estados Unidos</strong>. Cualquier disputa será resuelta en los tribunales del <strong>Condado de Harris, Texas</strong>.</p>
-            <h3>Indemnización</h3>
-            <p>El cliente se compromete a indemnizar, defender y mantener indemne a Esencia Agency, Vantage Media Holdings LLC, sus directores, empleados y agentes, de cualquier reclamación, demanda, daño, pérdida o gasto (incluyendo honorarios de abogados) que surja de:</p>
-            <ul>
-              <li>El contenido, servicios o prácticas comerciales del cliente.</li>
-              <li>El incumplimiento de estos términos por parte del cliente.</li>
-              <li>La violación de derechos de terceros por parte del cliente.</li>
-              <li>Afirmaciones médicas realizadas por el cliente en su contenido de marketing.</li>
-            </ul>
-            <h3>Fuerza mayor</h3>
-            <p>Ninguna de las partes será responsable de retrasos o incumplimientos causados por eventos fuera de su control razonable, incluyendo pero no limitado a: desastres naturales, pandemias, guerras, huelgas, fallos de Internet, cambios regulatorios o acciones gubernamentales.</p>
-            <h3>Divisibilidad</h3>
-            <p>Si alguna cláusula de estos términos se considera inválida o inaplicable por un tribunal competente, las demás cláusulas permanecerán en pleno vigor y efecto.</p>
-            <h3>Acuerdo completo</h3>
-            <p>Estos Términos de Servicio, junto con cualquier acuerdo de servicio firmado entre las partes, constituyen el acuerdo completo entre usted y Esencia Agency. Cualquier acuerdo previo, oral o escrito, queda sustituido por estos términos.</p>
-            <h3>Contacto</h3>
-            <p>Para cualquier pregunta sobre estos Términos de Servicio:</p>
-            <ul>
-              <li><strong>Correo electrónico:</strong> <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a></li>
-              <li><strong>Empresa:</strong> Vantage Media Holdings LLC</li>
-              <li><strong>Ubicación:</strong> Houston, Texas, Estados Unidos</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
+      <div class="legal-accordion-item"><button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-1"><span>Aceptacion y Descripcion de Servicios</span><span class="legal-accordion-icon" aria-hidden="true">+</span></button><div class="legal-accordion-panel" id="terms-1" role="region"><div class="legal-accordion-content"><p>Al usar esenciaagency.com o contratar servicios de <strong>Vantage Media Holdings LLC</strong> (Esencia Agency), acepta estos terminos. Ofrecemos gestion de redes sociales, publicidad en Meta y Google, automatizacion de WhatsApp, creacion de contenido, optimizacion de Google Business Profile y consultoria. Acuerdos mes a mes.</p></div></div></div>
+      <div class="legal-accordion-item"><button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-2"><span>Responsabilidades del Cliente</span><span class="legal-accordion-icon" aria-hidden="true">+</span></button><div class="legal-accordion-panel" id="terms-2" role="region"><div class="legal-accordion-content"><p>El cliente proporciona acceso a cuentas, mantiene propiedad total de activos digitales, paga presupuesto publicitario directamente a plataformas, es responsable de la veracidad de informacion proporcionada y debe contar con licencias necesarias.</p></div></div></div>
+      <div class="legal-accordion-item"><button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-3"><span>Propiedad Intelectual y Pagos</span><span class="legal-accordion-icon" aria-hidden="true">+</span></button><div class="legal-accordion-panel" id="terms-3" role="region"><div class="legal-accordion-content"><p>Esencia retiene metodologias y herramientas. El cliente es propietario del contenido creado para sus cuentas. Pago al inicio de cada mes, por adelantado. No se realizan reembolsos por trabajo completado. Presupuesto publicitario es adicional.</p></div></div></div>
+      <div class="legal-accordion-item"><button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-4"><span>Limitacion de Responsabilidad y Terminacion</span><span class="legal-accordion-icon" aria-hidden="true">+</span></button><div class="legal-accordion-panel" id="terms-4" role="region"><div class="legal-accordion-content"><p>No garantizamos resultados especificos. Responsabilidad maxima limitada a un mes de honorarios. Terminacion con 30 dias de aviso escrito. El cliente retiene todas sus cuentas y datos.</p></div></div></div>
+      <div class="legal-accordion-item"><button class="legal-accordion-btn" aria-expanded="false" aria-controls="terms-5"><span>Contenido Medico y Ley Aplicable</span><span class="legal-accordion-icon" aria-hidden="true">+</span></button><div class="legal-accordion-panel" id="terms-5" role="region"><div class="legal-accordion-content"><p>Esencia es una agencia de marketing, no un proveedor medico. El cliente es responsable de afirmaciones medicas. Ley del Estado de Texas. Disputas en Condado de Harris. Contacto: <a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a> | Vantage Media Holdings LLC, Houston, Texas.</p></div></div></div>
     </div>
     </div>
   </div>
 </section>
 
-<!-- ========================================
-     SECTION 14: FOOTER
-     ======================================== -->
 <footer class="site-footer" role="contentinfo">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#top" class="nav-logo" aria-label="Esencia Agency - Inicio">Esencia Agency</a>
-        <p>Sistema de generacion de consultas para clínicas estéticas en Colombia. Instagram, Google, WhatsApp y anuncios con una estrategia clara, remota y medible.</p>
-        <p class="footer-brand-sub">Colombia + USA &middot; 100% remoto &middot; Vantage Media Holdings LLC</p>
+        <p>Marketing para clinicas esteticas en Colombia y Estados Unidos.</p>
+        <p class="footer-brand-sub">Vantage Media Holdings LLC &middot; Houston, TX</p>
       </div>
-      <div class="footer-col">
-        <h4>Navegacion</h4>
-        <ul>
-          <li><a href="#top">Inicio</a></li>
-          <li><a href="#sistema">Cómo Trabajamos</a></li>
-          <li><a href="#faq">Preguntas Frecuentes</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Blog</h4>
-        <ul>
-          <li><a href="/blog/publicidad-instagram-clinicas-esteticas.html">Publicidad en Instagram</a></li>
-          <li><a href="/blog/whatsapp-business-clinicas-guia.html">WhatsApp para Clínicas</a></li>
-          <li><a href="/blog/elegir-agencia-marketing-clinica-estetica.html">Elegir una Agencia</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Mercados</h4>
-        <ul>
-          <li><a href="#nosotros">Colombia</a></li>
-          <li><a href="#nosotros">Estados Unidos</a></li>
-          <li><a href="#nosotros">100% Remoto</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Recursos</h4>
-        <ul>
-          <li><a href="https://wa.me/18325577749" target="_blank" rel="noopener noreferrer">WhatsApp para Clínicas</a></li>
-          <li><a href="#servicios">Google Business</a></li>
-          <li><a href="#servicios">Meta Ads</a></li>
-        </ul>
-      </div>
+      <div class="footer-col"><h4>Navegacion</h4><ul><li><a href="#top">Inicio</a></li><li><a href="#resultados">Resultados</a></li><li><a href="#sistema">Sistema</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
+      <div class="footer-col"><h4>Blog</h4><ul><li><a href="/blog/publicidad-instagram-clinicas-esteticas.html">Publicidad en Instagram</a></li><li><a href="/blog/whatsapp-business-clinicas-guia.html">WhatsApp para Clinicas</a></li><li><a href="/blog/elegir-agencia-marketing-clinica-estetica.html">Elegir una Agencia</a></li></ul></div>
+      <div class="footer-col"><h4>Contacto</h4><ul><li><a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a></li><li><a href="https://wa.me/18325577749" target="_blank" rel="noopener noreferrer">WhatsApp</a></li><li><a href="https://www.instagram.com/esencia.agency" target="_blank" rel="noopener noreferrer">Instagram</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Esencia Agency. Todos los derechos reservados.</span>
-      <div class="footer-bottom-links">
-        <a href="#privacy">Política de Privacidad</a>
-        <span aria-hidden="true">&middot;</span>
-        <a href="#terms">Términos de Servicio</a>
-      </div>
+      <div class="footer-bottom-links"><a href="#privacy">Privacidad</a><span aria-hidden="true">&middot;</span><a href="#terms">Terminos</a></div>
     </div>
-    <div class="footer-accessibility">
-      Este sitio cumple con WCAG 2.1 nivel AA.
-    </div>
+    <div class="footer-accessibility">Este sitio cumple con WCAG 2.1 nivel AA.</div>
   </div>
 </footer>
 
-<!-- ========================================
-     SECTION 15: FLOATING WHATSAPP BUTTON
-     ======================================== -->
-<a href="https://wa.me/18325577749" class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Escríbeme por WhatsApp">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-  </svg>
-  <span>Escríbeme</span>
+<a href="https://wa.me/18325577749?text=Hola%2C%20me%20interesa%20una%20auditor%C3%ADa%20para%20mi%20cl%C3%ADnica" class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Escribanos por WhatsApp" onclick="if(typeof fbq!=='undefined')fbq('track','Contact',{content_name:'WhatsApp Click - Float'});if(typeof gtag!=='undefined')gtag('event','whatsapp_click',{event_category:'contact',event_label:'float'});">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span>WhatsApp</span>
 </a>
 
-<!-- ========================================
-     JAVASCRIPT
-     ======================================== -->
 <script>
 (function() {
   'use strict';
-
-  /* ========================================
-     1. SCROLL ANIMATIONS (IntersectionObserver)
-     ======================================== */
   var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
   if (!prefersReducedMotion) {
     var fadeElements = document.querySelectorAll('.fade-up');
     if ('IntersectionObserver' in window) {
-      var fadeObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            fadeObserver.unobserve(entry.target);
-          }
-        });
-      }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -40px 0px'
-      });
+      var fadeObserver = new IntersectionObserver(function(entries) { entries.forEach(function(entry) { if (entry.isIntersecting) { entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      fadeElements.forEach(function(el) { fadeObserver.observe(el); });
+    } else { fadeElements.forEach(function(el) { el.classList.add('visible'); }); }
+  } else { document.querySelectorAll('.fade-up').forEach(function(el) { el.classList.add('visible'); }); }
 
-      fadeElements.forEach(function(el) {
-        fadeObserver.observe(el);
-      });
-    } else {
-      fadeElements.forEach(function(el) {
-        el.classList.add('visible');
-      });
-    }
-  } else {
-    document.querySelectorAll('.fade-up').forEach(function(el) {
-      el.classList.add('visible');
-    });
-  }
-
-  /* ========================================
-     2. FAQ ACCORDION
-     ======================================== */
-  var faqButtons = document.querySelectorAll('.faq-question');
-
-  faqButtons.forEach(function(button) {
+  document.querySelectorAll('.faq-question').forEach(function(button) {
     button.addEventListener('click', function() {
       var isExpanded = this.getAttribute('aria-expanded') === 'true';
-      var answerId = this.getAttribute('aria-controls');
-      var answer = document.getElementById(answerId);
-
-      // Close all other FAQ items
-      faqButtons.forEach(function(otherButton) {
-        if (otherButton !== button) {
-          otherButton.setAttribute('aria-expanded', 'false');
-          var otherAnswerId = otherButton.getAttribute('aria-controls');
-          var otherAnswer = document.getElementById(otherAnswerId);
-          if (otherAnswer) {
-            otherAnswer.style.maxHeight = '0';
-          }
-        }
-      });
-
-      // Toggle current item
-      if (isExpanded) {
-        this.setAttribute('aria-expanded', 'false');
-        answer.style.maxHeight = '0';
-      } else {
-        this.setAttribute('aria-expanded', 'true');
-        answer.style.maxHeight = answer.scrollHeight + 'px';
-      }
+      var answer = document.getElementById(this.getAttribute('aria-controls'));
+      document.querySelectorAll('.faq-question').forEach(function(ob) { if (ob !== button) { ob.setAttribute('aria-expanded', 'false'); var oa = document.getElementById(ob.getAttribute('aria-controls')); if (oa) oa.style.maxHeight = '0'; } });
+      this.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+      answer.style.maxHeight = isExpanded ? '0' : answer.scrollHeight + 'px';
     });
-
-    // Keyboard: Enter and Space
-    button.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        this.click();
-      }
-    });
+    button.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); } });
   });
 
-  /* ========================================
-     2b. LEGAL ACCORDIONS (independent per section)
-     ======================================== */
   document.querySelectorAll('.legal-accordion').forEach(function(accordion) {
     var buttons = accordion.querySelectorAll('.legal-accordion-btn');
     buttons.forEach(function(button) {
       button.addEventListener('click', function() {
         var isExpanded = this.getAttribute('aria-expanded') === 'true';
-        var panelId = this.getAttribute('aria-controls');
-        var panel = document.getElementById(panelId);
-
-        // Close all other items in this accordion
-        buttons.forEach(function(otherBtn) {
-          if (otherBtn !== button) {
-            otherBtn.setAttribute('aria-expanded', 'false');
-            var otherId = otherBtn.getAttribute('aria-controls');
-            var otherPanel = document.getElementById(otherId);
-            if (otherPanel) otherPanel.style.maxHeight = '0';
-          }
-        });
-
-        if (isExpanded) {
-          this.setAttribute('aria-expanded', 'false');
-          panel.style.maxHeight = '0';
-        } else {
-          this.setAttribute('aria-expanded', 'true');
-          panel.style.maxHeight = panel.scrollHeight + 'px';
-        }
+        var panel = document.getElementById(this.getAttribute('aria-controls'));
+        buttons.forEach(function(ob) { if (ob !== button) { ob.setAttribute('aria-expanded', 'false'); var op = document.getElementById(ob.getAttribute('aria-controls')); if (op) op.style.maxHeight = '0'; } });
+        this.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+        panel.style.maxHeight = isExpanded ? '0' : panel.scrollHeight + 'px';
       });
-
-      button.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          this.click();
-        }
-      });
+      button.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); } });
     });
   });
 
-  /* ========================================
-     2c. LEGAL MASTER TOGGLES (collapse entire section)
-     ======================================== */
   document.querySelectorAll('.legal-master-toggle').forEach(function(toggle) {
-    toggle.addEventListener('click', function() {
-      var isExpanded = this.getAttribute('aria-expanded') === 'true';
-      var bodyId = this.getAttribute('aria-controls');
-      var body = document.getElementById(bodyId);
-      if (isExpanded) {
-        this.setAttribute('aria-expanded', 'false');
-        body.style.maxHeight = '0';
-      } else {
-        this.setAttribute('aria-expanded', 'true');
-        body.style.maxHeight = body.scrollHeight + 'px';
-      }
-    });
-    toggle.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        this.click();
-      }
-    });
+    toggle.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); } });
   });
 
-  /* ========================================
-     3. MOBILE MENU
-     ======================================== */
   var hamburger = document.querySelector('.hamburger');
   var mobileMenu = document.getElementById('mobile-menu');
   var mobileOverlay = document.getElementById('mobile-menu-overlay');
   var mobileClose = document.querySelector('.mobile-menu-close');
   var previousFocus = null;
-
-  function openMobileMenu() {
-    previousFocus = document.activeElement;
-    hamburger.setAttribute('aria-expanded', 'true');
-    mobileMenu.classList.add('active');
-    mobileMenu.setAttribute('aria-hidden', 'false');
-    mobileOverlay.classList.add('active');
-    mobileOverlay.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-
-    // Focus the close button after transition
-    setTimeout(function() {
-      mobileClose.focus();
-    }, 100);
-  }
-
-  function closeMobileMenu() {
-    hamburger.setAttribute('aria-expanded', 'false');
-    mobileMenu.classList.remove('active');
-    mobileMenu.setAttribute('aria-hidden', 'true');
-    mobileOverlay.classList.remove('active');
-    mobileOverlay.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-
-    // Return focus to the hamburger button
-    if (previousFocus) {
-      previousFocus.focus();
-    }
-  }
-
+  function openMobileMenu() { previousFocus = document.activeElement; hamburger.setAttribute('aria-expanded', 'true'); mobileMenu.classList.add('active'); mobileMenu.setAttribute('aria-hidden', 'false'); mobileOverlay.classList.add('active'); mobileOverlay.setAttribute('aria-hidden', 'false'); document.body.style.overflow = 'hidden'; setTimeout(function() { mobileClose.focus(); }, 100); }
+  function closeMobileMenu() { hamburger.setAttribute('aria-expanded', 'false'); mobileMenu.classList.remove('active'); mobileMenu.setAttribute('aria-hidden', 'true'); mobileOverlay.classList.remove('active'); mobileOverlay.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; if (previousFocus) previousFocus.focus(); }
   hamburger.addEventListener('click', openMobileMenu);
   mobileClose.addEventListener('click', closeMobileMenu);
   mobileOverlay.addEventListener('click', closeMobileMenu);
+  mobileMenu.querySelectorAll('.mobile-menu-links a, .mobile-menu-footer a').forEach(function(link) { link.addEventListener('click', closeMobileMenu); });
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && mobileMenu.classList.contains('active')) closeMobileMenu(); });
+  mobileMenu.addEventListener('keydown', function(e) { if (e.key !== 'Tab') return; var f = mobileMenu.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])'); if (!f.length) return; if (e.shiftKey) { if (document.activeElement === f[0]) { e.preventDefault(); f[f.length-1].focus(); } } else { if (document.activeElement === f[f.length-1]) { e.preventDefault(); f[0].focus(); } } });
 
-  // Close on link click
-  mobileMenu.querySelectorAll('.mobile-menu-links a, .mobile-menu-footer a').forEach(function(link) {
-    link.addEventListener('click', closeMobileMenu);
-  });
-
-  // Escape key closes menu
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
-      closeMobileMenu();
-    }
-  });
-
-  // Focus trap
-  mobileMenu.addEventListener('keydown', function(e) {
-    if (e.key !== 'Tab') return;
-
-    var focusableElements = mobileMenu.querySelectorAll(
-      'a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])'
-    );
-
-    if (focusableElements.length === 0) return;
-
-    var firstFocusable = focusableElements[0];
-    var lastFocusable = focusableElements[focusableElements.length - 1];
-
-    if (e.shiftKey) {
-      if (document.activeElement === firstFocusable) {
-        e.preventDefault();
-        lastFocusable.focus();
-      }
-    } else {
-      if (document.activeElement === lastFocusable) {
-        e.preventDefault();
-        firstFocusable.focus();
-      }
-    }
-  });
-
-  /* ========================================
-     4. STICKY NAV SHADOW
-     ======================================== */
   var nav = document.querySelector('.nav');
-  var scrollThreshold = 50;
-
-  function handleNavScroll() {
-    if (window.scrollY > scrollThreshold) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
-    }
-  }
-
+  function handleNavScroll() { if (window.scrollY > 50) nav.classList.add('scrolled'); else nav.classList.remove('scrolled'); }
   window.addEventListener('scroll', handleNavScroll, { passive: true });
   handleNavScroll();
 
-  /* ========================================
-     5. SMOOTH SCROLL WITH NAV OFFSET
-     ======================================== */
   document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
     anchor.addEventListener('click', function(e) {
-      var targetId = this.getAttribute('href');
-      if (targetId === '#') return;
-
+      var targetId = this.getAttribute('href'); if (targetId === '#') return;
       var target = document.querySelector(targetId);
-      if (target) {
-        e.preventDefault();
-        var navHeight = document.querySelector('.nav').offsetHeight;
-        var targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 24;
-
-        window.scrollTo({
-          top: targetPosition,
-          behavior: prefersReducedMotion ? 'auto' : 'smooth'
-        });
-
-        // Move focus for accessibility
-        target.setAttribute('tabindex', '-1');
-        target.focus({ preventScroll: true });
-      }
+      if (target) { e.preventDefault(); window.scrollTo({ top: target.getBoundingClientRect().top + window.pageYOffset - document.querySelector('.nav').offsetHeight - 24, behavior: prefersReducedMotion ? 'auto' : 'smooth' }); target.setAttribute('tabindex', '-1'); target.focus({ preventScroll: true }); }
     });
   });
 
-  /* ========================================
-     6. FORM VALIDATION
-     ======================================== */
   var contactForm = document.getElementById('contact-form');
-
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
       var isValid = true;
-
-      var nameInput = document.getElementById('contact-name');
-      var nameError = document.getElementById('error-name');
-      var whatsappInput = document.getElementById('contact-whatsapp');
-      var whatsappError = document.getElementById('error-whatsapp');
-
-      // Reset errors
-      nameInput.classList.remove('error');
-      nameError.classList.remove('visible');
-      whatsappInput.classList.remove('error');
-      whatsappError.classList.remove('visible');
-
-      // Validate name
-      if (!nameInput.value.trim()) {
-        nameInput.classList.add('error');
-        nameError.classList.add('visible');
-        isValid = false;
-      }
-
-      // Validate WhatsApp
-      if (!whatsappInput.value.trim()) {
-        whatsappInput.classList.add('error');
-        whatsappError.classList.add('visible');
-        isValid = false;
-      }
-
-      if (!isValid) {
-        e.preventDefault();
-        // Focus first invalid field
-        var firstError = contactForm.querySelector('.form-input.error');
-        if (firstError) {
-          firstError.focus();
-        }
-      }
+      var ni = document.getElementById('contact-name'), ne = document.getElementById('error-name');
+      var wi = document.getElementById('contact-whatsapp'), we = document.getElementById('error-whatsapp');
+      ni.classList.remove('error'); ne.classList.remove('visible'); wi.classList.remove('error'); we.classList.remove('visible');
+      if (!ni.value.trim()) { ni.classList.add('error'); ne.classList.add('visible'); isValid = false; }
+      if (!wi.value.trim()) { wi.classList.add('error'); we.classList.add('visible'); isValid = false; }
+      if (!isValid) { e.preventDefault(); var f = contactForm.querySelector('.form-input.error'); if (f) f.focus(); }
+      else { if(typeof fbq!=='undefined')fbq('track','Lead',{content_name:'Contact Form'}); if(typeof gtag!=='undefined')gtag('event','form_submit',{event_category:'contact',event_label:'audit_request'}); }
     });
-
-    // Clear errors on input
-    var requiredFields = ['contact-name', 'contact-whatsapp'];
-    requiredFields.forEach(function(id) {
-      var input = document.getElementById(id);
-      if (input) {
-        input.addEventListener('input', function() {
-          this.classList.remove('error');
-          var fieldName = id.replace('contact-', '');
-          var errorEl = document.getElementById('error-' + fieldName);
-          if (errorEl) {
-            errorEl.classList.remove('visible');
-          }
-        });
-      }
-    });
+    ['contact-name', 'contact-whatsapp'].forEach(function(id) { var i = document.getElementById(id); if (i) i.addEventListener('input', function() { this.classList.remove('error'); var err = document.getElementById('error-' + id.replace('contact-', '')); if (err) err.classList.remove('visible'); }); });
   }
 
-  /* ========================================
-     7. WHATSAPP BUTTON ANIMATION
-     ======================================== */
-  var whatsappFloat = document.getElementById('whatsapp-float');
-
-  if (whatsappFloat) {
-    if (!prefersReducedMotion) {
-      setTimeout(function() {
-        whatsappFloat.classList.add('visible');
-      }, 2000);
-    } else {
-      whatsappFloat.classList.add('visible');
-    }
-  }
-
+  var wf = document.getElementById('whatsapp-float');
+  if (wf) { if (!prefersReducedMotion) { setTimeout(function() { wf.classList.add('visible'); }, 2000); } else { wf.classList.add('visible'); } }
 })();
 </script>
-
 </body>
 </html>
