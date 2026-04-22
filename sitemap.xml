@@ -20,6 +20,24 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://esenciaagency.com/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://esenciaagency.com/blog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://esenciaagency.com/en/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://esenciaagency.com/blog/" />
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://esenciaagency.com/en/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://esenciaagency.com/blog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://esenciaagency.com/en/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://esenciaagency.com/blog/" />
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://esenciaagency.com/blog/publicidad-instagram-clinicas-esteticas.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://esenciaagency.com/blog/publicidad-instagram-clinicas-esteticas.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://esenciaagency.com/en/blog/instagram-advertising-aesthetic-clinics.html" />
