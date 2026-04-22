@@ -21,9 +21,21 @@
   </url>
   <url>
     <loc>https://esenciaagency.com/blog/publicidad-instagram-clinicas-esteticas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://esenciaagency.com/blog/publicidad-instagram-clinicas-esteticas.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://esenciaagency.com/en/blog/instagram-advertising-aesthetic-clinics.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://esenciaagency.com/blog/publicidad-instagram-clinicas-esteticas.html" />
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://esenciaagency.com/en/blog/instagram-advertising-aesthetic-clinics.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://esenciaagency.com/blog/publicidad-instagram-clinicas-esteticas.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://esenciaagency.com/en/blog/instagram-advertising-aesthetic-clinics.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://esenciaagency.com/en/blog/instagram-advertising-aesthetic-clinics.html" />
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://esenciaagency.com/blog/whatsapp-business-clinicas-guia.html</loc>
