@@ -59,11 +59,9 @@
     {"@type": "Question", "name": "Who owns my social media and ad accounts?", "acceptedAnswer": {"@type": "Answer", "text": "Always the clinic. Esencia works with secure access and business permissions, but ownership of accounts, assets, and data always belongs to the client."}},
     {"@type": "Question", "name": "Who pays for ad spend?", "acceptedAnswer": {"@type": "Answer", "text": "The clinic pays the ad budget directly. Our fee covers strategy, setup, management, and optimization — not the ad spend itself."}},
     {"@type": "Question", "name": "Do I need to provide my own photos and videos?", "acceptedAnswer": {"@type": "Answer", "text": "Ideally yes — real clinic material works best. We also structure content, visual guides, and complementary pieces depending on your plan."}},
-    {"@type": "Question", "name": "How do you work if you're not physically in my city?", "acceptedAnswer": {"@type": "Answer", "text": "Everything is managed remotely via Zoom, email, and WhatsApp. The process is designed to be clear, simple, and fast."}},
     {"@type": "Question", "name": "What results can I expect?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on your starting point, your offer, your market, and your budget. We don't promise unrealistic results — we work with clear metrics we track together, constant optimization, and transparent monthly reports."}},
-    {"@type": "Question", "name": "Do you work with clinics outside Colombia?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We work with aesthetic clinics in Colombia and the United States. It's all run 100% remote and bilingual, designed to work in any aesthetics market."}},
+    {"@type": "Question", "name": "Do you work with clinics outside Colombia?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We operate 100% remote, bilingual EN/ES, in Colombia and the United States. Communication via Zoom, email, and WhatsApp."}},
     {"@type": "Question", "name": "How do you use AI in my clinic's marketing?", "acceptedAnswer": {"@type": "Answer", "text": "We use AI tools to optimize ads, create content variations, automate WhatsApp responses, and analyze performance data. Our team directs the strategy. All content goes through human review before publishing."}},
-    {"@type": "Question", "name": "Is there a contract before starting?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Before starting, we work with a clear service agreement that defines scope, timelines, deliverables, and terms."}},
     {"@type": "Question", "name": "Do you work with other types of clinics?", "acceptedAnswer": {"@type": "Answer", "text": "Our method works for any clinic where patients book consultations. Our case studies are from aesthetic clinics because that's where we've run our first campaigns. If you're a dentist, surgeon, or another clinic type, we're open to a conversation."}}
   ]
 }
@@ -152,10 +150,6 @@ a.lang-btn:not(.active):hover { border-color: var(--accent); color: var(--accent
 .hero h1 em { color: var(--accent); font-style: italic; }
 .hero-sub { font-size: 1.15rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 2.5rem; max-width: 560px; }
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 4rem; }
-.proof-bar { border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 2.5rem 0; }
-.proof-bar-inner { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem 2rem; text-align: center; }
-@media (min-width: 768px) { .proof-bar-inner { grid-template-columns: repeat(4, 1fr); gap: 0; } .proof-bar-item:not(:last-child) { border-right: 1px solid var(--border-subtle); } }
-.proof-bar-item { padding: 0 1rem; }
 .proof-number { font-family: var(--font-heading); font-size: clamp(1.75rem, 3vw, 2.25rem); font-weight: 700; color: var(--text-primary); line-height: 1; letter-spacing: -0.02em; margin-bottom: 0.35rem; }
 .proof-label { font-size: 0.8rem; color: var(--text-muted); line-height: 1.4; }
 .problems-list { max-width: 640px; margin-bottom: 2rem; }
@@ -344,7 +338,7 @@ if (localStorage.getItem('esencia_consent') === 'accepted') { window.loadTrackin
         <h1 id="hero-heading">Your clinic deserves<br>a <em>full schedule.</em></h1>
         <p class="hero-sub">We build the system that turns Instagram, Google, and WhatsApp into real patients for your aesthetic clinic.</p>
         <div class="hero-buttons">
-          <a href="https://wa.me/18325577749?text=Hi%2C%20I%27m%20interested%20in%20an%20audit%20for%20my%20clinic" class="btn btn-primary" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','Contact',{content_name:'WhatsApp Click - Hero'});if(typeof gtag!=='undefined')gtag('event','whatsapp_click',{event_category:'contact',event_label:'hero'});">Message Us on WhatsApp</a>
+          <a href="https://wa.me/18325577749?text=Hi%2C%20I%27m%20interested%20in%20an%20audit%20for%20my%20clinic" class="btn btn-primary" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','Contact',{content_name:'WhatsApp Click - Hero'});if(typeof gtag!=='undefined')gtag('event','whatsapp_click',{event_category:'contact',event_label:'hero'});">Message us on WhatsApp</a>
           <a href="#results" class="btn btn-secondary">See Results</a>
         </div>
       </div>
@@ -356,10 +350,9 @@ if (localStorage.getItem('esencia_consent') === 'accepted') { window.loadTrackin
       <h2 id="problems-heading" class="case-study-heading fade-up">Your clinic has a patient leak.</h2>
       <div class="problems-list fade-up">
         <div class="problem-item"><span class="problem-x" aria-hidden="true">-</span><div class="problem-text"><h3>People inquire but never book</h3><p>They message on WhatsApp, get a price, and disappear. Without follow-up, every inquiry is lost.</p></div></div>
-        <div class="problem-item"><span class="problem-x" aria-hidden="true">-</span><div class="problem-text"><h3>Your online presence doesn't match your quality</h3><p>Your work is excellent. But a patient who sees your Instagram doesn't know that. Trust is lost before the first appointment.</p></div></div>
-        <div class="problem-item"><span class="problem-x" aria-hidden="true">-</span><div class="problem-text"><h3>Every day without a structure, your competitors grow</h3><p>While you decide, other clinics are capturing the patients who searched for you. One month without adjustments can cost 10+ lost consultations.</p></div></div>
+        <div class="problem-item"><span class="problem-x" aria-hidden="true">-</span><div class="problem-text"><h3>Your online presence doesn't match your quality</h3><p>If your work is first-class, your Instagram should reflect it. When it doesn't, trust is lost before the first appointment.</p></div></div>
+        <div class="problem-item"><span class="problem-x" aria-hidden="true">-</span><div class="problem-text"><h3>Every day without a structure, your competitors grow</h3><p>While you decide, other clinics are capturing the patients who searched for you. Every week without structure carries a measurable cost.</p></div></div>
       </div>
-      <div style="margin-top: 1.5rem;" class="fade-up"><a href="#contact" class="btn btn-secondary">Find out how many consultations you're losing</a></div>
     </div>
   </section>
 
@@ -392,8 +385,7 @@ if (localStorage.getItem('esencia_consent') === 'accepted') { window.loadTrackin
           <div class="ba-row"><span>FB Views (28 days)</span><span>3,200</span></div>
         </div>
       </div>
-      <p class="case-note fade-up">Real campaign, March-April 2026. Trial period results.</p>
-      <p class="fade-up" style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.5rem;">Results from a real campaign, March-April 2026. Individual results vary based on budget, market, and clinic type.</p>
+      <p class="case-note fade-up">Real campaign, March-April 2026. Individual results vary based on budget, market, and clinic type.</p>
       <div style="margin-top: 2rem;" class="fade-up"><a href="#contact" class="btn btn-primary">I want results like this for my clinic</a></div>
     </div>
   </section>
@@ -401,12 +393,11 @@ if (localStorage.getItem('esencia_consent') === 'accepted') { window.loadTrackin
   <section class="system section-padding" id="system" aria-labelledby="system-heading">
     <div class="container">
       <h2 id="system-heading" class="case-study-heading fade-up">3 steps. New patients every week.</h2>
-      <p class="fade-up" style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; font-style: italic; color: var(--text-primary); margin: 0.5rem auto 1.5rem; max-width: 640px;">It's not the service. It's not the price. It's the system.</p>
-      <p class="case-study-sub fade-up">We don't sell posts. We build the system that fills your schedule while you treat patients.</p>
+      <p class="fade-up" style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; font-style: italic; color: var(--text-primary); margin: 0.5rem auto 2rem; max-width: 640px;">It's not the service. It's not the price. It's the system.</p>
       <div class="system-grid fade-up">
         <div class="system-step"><div class="system-step-num">01</div><h3>We audit your clinic</h3><p>We find exactly where you're losing patients and what needs to change first.</p></div>
         <div class="system-step"><div class="system-step-num">02</div><h3>We activate your system</h3><p>Targeted ads in your city, automated WhatsApp follow-up, and content that builds trust.</p></div>
-        <div class="system-step"><div class="system-step-num">03</div><h3>You receive patients</h3><p>Qualified consultations arrive on your WhatsApp ready to book. You approve content in 10 minutes a day. We handle the rest.</p></div>
+        <div class="system-step"><div class="system-step-num">03</div><h3>You receive patients</h3><p>Qualified consultations arrive on your WhatsApp. You approve content in 10 minutes a day. We handle the rest.</p></div>
       </div>
       <div style="text-align: center; margin-top: 2.5rem;" class="fade-up"><a href="#contact" class="btn btn-secondary">Start with a free audit</a></div>
     </div>
@@ -433,7 +424,7 @@ if (localStorage.getItem('esencia_consent') === 'accepted') { window.loadTrackin
       <div class="about-grid">
         <div class="about-text fade-up">
           <p>You know your work is excellent. But your Instagram doesn't show it, your WhatsApp takes hours to respond, and your ads aren't generating appointments. That changes.</p>
-          <p>We take a maximum of 5 new clinics per quarter to guarantee personalized attention. If your clinic delivers quality treatments and wants to grow with real strategy, let's talk.</p>
+          <p>We work with a maximum of 5 new clinics per quarter to keep our attention personalized. If you already see patients regularly and want to scale without losing quality, let's talk.</p>
           <div class="about-tags" style="margin-top: 1.5rem;">
             <span class="about-tag">Aesthetic clinics</span>
             <span class="about-tag">Medical tourism</span>
@@ -447,33 +438,17 @@ if (localStorage.getItem('esencia_consent') === 'accepted') { window.loadTrackin
     </div>
   </section>
 
-  <section class="section-padding" style="padding-top: 3rem; padding-bottom: 3rem; background: var(--bg-main);">
-    <div class="container" style="text-align: center; max-width: 720px;">
-      <p class="fade-up" style="font-family: var(--font-display); font-size: 1.6rem; line-height: 1.4; font-weight: 600; font-style: italic; color: var(--text-primary); margin: 0;">The businesses that grow don't rely on isolated actions. They rely on systems.</p>
-    </div>
-  </section>
-
-  <section class="section-padding" id="plans" aria-labelledby="pricing-heading" style="background: var(--bg-alt);">
-    <div class="container" style="text-align: center; max-width: 640px;">
-      <h2 id="pricing-heading" class="case-study-heading fade-up">A plan designed for your clinic.</h2>
-      <p class="case-study-sub fade-up" style="margin: 1rem auto 2.5rem;">Every clinic has a different starting point. We begin with a free audit to understand what your clinic needs and recommend the most direct path to results.</p>
-      <a href="#contact" class="btn btn-primary fade-up">Request Free Audit</a>
-    </div>
-  </section>
-
-  <section class="faq section-padding" id="faq" aria-labelledby="faq-heading">
+<section class="faq section-padding" id="faq" aria-labelledby="faq-heading">
     <div class="container">
       <h2 id="faq-heading" class="case-study-heading fade-up" style="margin-bottom: 2.5rem;">Frequently asked questions.</h2>
       <div class="faq-list" role="list">
         <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-1" aria-expanded="false" aria-controls="faq-answer-1" type="button"><span>Who owns my social media and ad accounts?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1"><div class="faq-answer-inner">Always the clinic. Esencia works with secure access and business permissions, but ownership of accounts, assets, and data always belongs to the client.</div></div></div>
         <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-2" aria-expanded="false" aria-controls="faq-answer-2" type="button"><span>Who pays for ad spend?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2"><div class="faq-answer-inner">The clinic pays the ad budget directly. Our fee covers strategy, setup, management, and optimization — not the ad spend itself.</div></div></div>
         <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-3" aria-expanded="false" aria-controls="faq-answer-3" type="button"><span>Do I need to provide my own photos and videos?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3"><div class="faq-answer-inner">Ideally yes — real clinic material works best. We also structure content, visual guides, and complementary pieces depending on your plan.</div></div></div>
-        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-4" aria-expanded="false" aria-controls="faq-answer-4" type="button"><span>How do you work if you're not physically in my city?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4"><div class="faq-answer-inner">Everything is managed remotely via Zoom, email, and WhatsApp. The process is designed to be clear, simple, and fast.</div></div></div>
-        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-5" aria-expanded="false" aria-controls="faq-answer-5" type="button"><span>What results can I expect?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5"><div class="faq-answer-inner">It depends on your starting point, your offer, your market, and your budget. We don't promise unrealistic results — we work with clear metrics we track together, constant optimization, and transparent monthly reports.</div></div></div>
-        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-6" aria-expanded="false" aria-controls="faq-answer-6" type="button"><span>Do you work with clinics outside Colombia?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6"><div class="faq-answer-inner">Yes. We work with aesthetic clinics in Colombia and the United States. It's all run 100% remote and bilingual, designed to work in any aesthetics market.</div></div></div>
-        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-7" aria-expanded="false" aria-controls="faq-answer-7" type="button"><span>How do you use AI in my clinic's marketing?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7"><div class="faq-answer-inner">We use AI tools to optimize ads, create content variations, automate WhatsApp responses, and analyze performance data. Our team directs the strategy. All content goes through human review before publishing.</div></div></div>
-        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-8" aria-expanded="false" aria-controls="faq-answer-8" type="button"><span>Is there a contract before starting?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-8" role="region" aria-labelledby="faq-question-8"><div class="faq-answer-inner">Yes. Before starting, we work with a clear service agreement that defines scope, timelines, deliverables, and terms.</div></div></div>
-        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-9" aria-expanded="false" aria-controls="faq-answer-9" type="button"><span>Do you work with other types of clinics?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-9" role="region" aria-labelledby="faq-question-9"><div class="faq-answer-inner">Our method works for any clinic where patients book consultations. Our case studies are from aesthetic clinics because that's where we've run our first campaigns. If you're a dentist, surgeon, or another clinic type, we're open to a conversation.</div></div></div>
+        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-4" aria-expanded="false" aria-controls="faq-answer-4" type="button"><span>What results can I expect?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4"><div class="faq-answer-inner">It depends on your starting point, your offer, your market, and your budget. We don't promise unrealistic results — we work with clear metrics we track together, constant optimization, and transparent monthly reports.</div></div></div>
+        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-5" aria-expanded="false" aria-controls="faq-answer-5" type="button"><span>Do you work with clinics outside Colombia?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5"><div class="faq-answer-inner">Yes. We operate 100% remote, bilingual EN/ES, in Colombia and the United States. Communication via Zoom, email, and WhatsApp.</div></div></div>
+        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-6" aria-expanded="false" aria-controls="faq-answer-6" type="button"><span>How do you use AI in my clinic's marketing?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6"><div class="faq-answer-inner">We use AI tools to optimize ads, create content variations, automate WhatsApp responses, and analyze performance data. Our team directs the strategy. All content goes through human review before publishing.</div></div></div>
+        <div class="faq-item" role="listitem"><button class="faq-question" id="faq-question-7" aria-expanded="false" aria-controls="faq-answer-7" type="button"><span>Do you work with other types of clinics?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7"><div class="faq-answer-inner">Our method works for any clinic where patients book consultations. Our case studies are from aesthetic clinics because that's where we've run our first campaigns. If you're a dentist, surgeon, or another clinic type, we're open to a conversation.</div></div></div>
       </div>
     </div>
   </section>
@@ -496,7 +471,7 @@ if (localStorage.getItem('esencia_consent') === 'accepted') { window.loadTrackin
             <div class="form-group"><label class="form-label" for="contact-instagram">Clinic Instagram</label><input class="form-input" type="text" id="contact-instagram" name="instagram" placeholder="@yourclinic"></div>
             <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute; left:-9999px;" aria-hidden="true">
             <div class="form-group" style="display:flex; gap:0.5rem; align-items:flex-start; font-size:0.8rem; color:var(--text-muted); line-height:1.4;"><input type="checkbox" id="contact-consent" name="consent" required style="margin-top:0.2rem; flex-shrink:0;"><label for="contact-consent" style="font-size:0.8rem; color:var(--text-muted); cursor:pointer;">I agree to the processing of my personal data by Vantage Media Holdings LLC (Esencia Agency) per the <a href="#privacy" style="color:var(--accent); text-decoration:underline;">Privacy Policy</a>. *</label></div>
-            <button type="submit" class="btn btn-primary btn-full" aria-label="Send free audit request">Request Free Audit</button>
+            <button type="submit" class="btn btn-primary btn-full" aria-label="Send free audit request">Request free audit</button>
             <p class="form-note">We deliver an initial diagnostic of your Instagram within 48 hours. No mandatory call.</p>
           </form>
         </div>
@@ -549,7 +524,7 @@ if (localStorage.getItem('esencia_consent') === 'accepted') { window.loadTrackin
         <p class="footer-brand-sub">Vantage Media Holdings LLC &middot; Houston, TX</p>
       </div>
       <div class="footer-col"><h4>Navigation</h4><ul><li><a href="#top">Home</a></li><li><a href="#results">Results</a></li><li><a href="#system">System</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Resources</h4><ul><li><a href="/en/blog/instagram-advertising-aesthetic-clinics.html">Instagram Ads Cost Guide</a></li><li><a href="/" aria-label="Ver blog en español">Blog (Spanish)</a></li></ul></div>
+      <div class="footer-col"><h4>Resources</h4><ul><li><a href="/en/blog/instagram-advertising-aesthetic-clinics.html">Instagram Ads Cost Guide</a></li><li><a href="/blog/publicidad-instagram-clinicas-esteticas.html" aria-label="View Spanish blog">Blog (Spanish)</a></li></ul></div>
       <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:hello@esenciaagency.com">hello@esenciaagency.com</a></li><li><a href="https://wa.me/18325577749" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq!=='undefined')fbq('track','Contact',{content_name:'WhatsApp Click - Footer'});if(typeof gtag!=='undefined')gtag('event','whatsapp_click',{event_category:'contact',event_label:'footer'});">WhatsApp</a></li><li><a href="https://www.instagram.com/esencia.agency" target="_blank" rel="noopener noreferrer">Instagram</a></li></ul></div>
     </div>
     <p class="footer-brand-sub" style="text-align:center; max-width:720px; margin:1.5rem auto 0; padding:0 1rem;">Esencia Agency is a marketing agency, not a medical provider. The client is solely responsible for any medical claims made about their treatments.</p>
