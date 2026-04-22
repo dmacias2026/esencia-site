@@ -1,0 +1,14 @@
+{
+  "name": "Esencia Agency",
+  "short_name": "Esencia",
+  "description": "Marketing para clínicas estéticas en Colombia y Estados Unidos.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#C8A87C",
+  "icons": [
+    {"src": "/assets/favicon-16x16.png", "sizes": "16x16", "type": "image/png"},
+    {"src": "/assets/favicon-32x32.png", "sizes": "32x32", "type": "image/png"},
+    {"src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}
+  ]
+}
